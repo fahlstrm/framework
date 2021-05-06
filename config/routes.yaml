@@ -1,0 +1,61 @@
+
+# En route: index är namn. Path är pathen och controller är handler för routen
+
+index:
+   path: /
+   controller: App\Controller\HomeController
+
+hello:
+    path: /hello-world
+    controller: App\Controller\HelloWorldController::helloMessage
+
+    
+twentyone:
+    path: /twentyone
+    controller: App\Controller\TwentyOneController::start
+
+twentyone_play:
+    path: /twentyone/play
+    controller: App\Controller\TwentyOneController::play
+    methods: POST
+
+twentyone_continue:
+    path: /twentyone/continue
+    controller: App\Controller\TwentyOneController::continue
+    methods: POST
+
+twentyone_reset:
+    path: /twentyone/reset
+    controller: App\Controller\TwentyOneController::reset
+    methods: POST
+
+
+yatzy:
+    path: /yatzy
+    controller: App\Controller\YatzyController::start
+
+yatzy_roll:
+    path: /yatzy/roll
+    controller: App\Controller\YatzyController::roll
+    methods: POST
+
+        
+yatzy_reset:
+    path: /yatzy/reset
+    controller: App\Controller\YatzyController::reset
+    methods: POST
+
+    
+yatzy_save:
+    path: /yatzy/save
+    controller: App\Controller\YatzyController::save
+    methods: POST
+
+
+session:
+    path: /session
+    controller: App\Controller\SessionController
+    
+session_destroy:
+    path: /session
+    controller: App\Controller\SessionController::destory

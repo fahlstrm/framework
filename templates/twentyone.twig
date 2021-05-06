@@ -1,0 +1,55 @@
+{% include 'header.twig' %}
+
+
+<div class="container">
+    <div class="left">
+        <h1> {{ data.header }} </h1>
+
+        <p> {{ data.message }}</p>
+
+        {{app.session.get("playersResult")}}
+        {{ app.session.get("newGame")}}
+        
+        {% if (data.amount == null and app.session.get("playersResult") == null) or app.session.get("newGame") != null %}
+            <form action="{{ path("twentyone_play") }}" method="post">
+                <label for="name">Antal tärningar:</label>
+                <input type="number" name="amount" min="1" max="2" value="1"><br><br>
+                <button type="submit">Starta</button>
+            </form>
+
+        {% elseif data.amount != null %}
+            <p> Detta slag: {{ data.player }} </p>
+            <p> Total summa: {{ data.playersum }} </p>
+
+            <br><br>
+            <form action="{{ path("twentyone_continue")}}" method="post">
+                <button type="submit" name="ongoing">Fortsätt</button>
+                <button type="submit" name="stop">Stopp</button>
+            </form>
+        {% endif %}
+    </div>
+
+    <div class="right">
+        <h1> Scoreboard: </h1>
+        {% if data.computersum is defined %}
+            <h3> Denna omgång: </h3>
+            <p> Ditt resultat {{ data.playersum }} </p>
+            <p> Datorns resultat: {{ data.computersum }} </p>
+        {% endif %}
+        {% if data.gameover is defined %}
+            <h1> {{ data.winner }} </h1>
+        {% endif %}
+        <h3> Total ställning: </h3>
+        <p> Spelare: {{ data.playerScore }}  </p>
+        <p> Datorn: {{ data.computerScore }} </p>
+        
+        {% if data.gameover is defined %} 
+            <form action="{{ path("twentyone_reset")}}" method="post">
+            <button type="submit" name="reset">Nollställ Score</button>
+            </form>
+        {% endif %}
+    </div>
+</div>
+
+
+{% include 'footer.twig' %}

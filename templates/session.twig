@@ -1,0 +1,17 @@
+{% include 'header.twig' %}
+
+
+<div class="container">
+    <div class="left">
+        <h1> {{ title }} </h1>
+
+        <p> {{ message }} </p>
+
+        {{ dump(app.session) }}
+
+        <form action="{{ path('session_destroy') }}" method="post">
+            <input type="submit" value="Förstör">
+        </form>
+    </div>
+</div>
+{% include 'footer.twig' %}
