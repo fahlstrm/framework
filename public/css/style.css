@@ -1,0 +1,52 @@
+body {
+    overflow-y: scroll;
+    width: 60vw;
+    margin: 0 auto;
+    padding-left: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: #FFCFB3;
+    font-size: 1.3em;
+}
+
+header a {
+    text-decoration: none;
+    color: #836C5F;
+}
+
+.nav a{
+    margin: 0 0.5vw;
+}
+
+main {
+    width: 60vw;
+    min-height: 30em;
+}
+
+footer {
+    border-top: 2px dotted #555;
+    min-height: 4em;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    height: 70vh;
+    grid-template-columns: 25vw 25vw;
+    grid-template-rows: 50vh;
+}
+
+.left {
+    grid-column: 1;
+}
+
+.right {
+    grid-column: 2;
+}
+

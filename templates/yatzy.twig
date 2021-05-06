@@ -1,0 +1,83 @@
+{% include 'header.twig' %}
+
+<div class="container">
+    <div class = "left"> 
+        <h1> {{ data.header }}</h1>
+
+        <p> {{ data.message }} {{ 3 - data.thisround }} </p>
+
+        <form action="{{ path('yatzy_roll') }}" method="post">
+            {% for key, value in data.rolled %}
+                <label for="{{key}}"> {{ value }} </label>
+                {% if data.thisround < 3 %} 
+                    <input type="checkbox" name="{{key}}" value="{{value}}">
+                {% endif %}
+                <br>  
+            {% endfor %}  
+
+            <br>
+            {% if data.thisround < 3 and data.gameover == 0 and not data.yatzy %} 
+                <input type="submit" value="Kasta om markerade">
+            {% elseif data.gameover  == 1 %} 
+                <p> Omgången är över. Resultatet är {{ data.scoreextra["summa"] }} </p>
+                <input type="submit" formaction="{{ path("yatzy_reset") }}" value="Nytt spel">
+            <br>
+            {% elseif data.yatzy %}
+                <h1> YATZY </h1>
+                <input type="submit" formaction="{{ path('yatzy_roll') }}" value="Slå igen">
+            {% else %}
+                <p> Inga slag kvar, välj hur du vill bokföra slagen till höger </p>
+            {% endif %}
+        </form>
+        <br>
+    </div>
+
+
+     <div class = "right"> 
+        <br>
+        <form action="{{ path("yatzy_save") }}" method="post">
+            <table>
+                <tr>
+                    <th>  </th>
+                    <th> Summa </th>
+                    <th> Valbara </th>
+                    
+                </tr>
+                {% for key, value in data.scoreboard %} 
+                    <tr>
+                        <td> {{ key }} </td>
+                        <td> 
+                            {% if value is defined %}
+                                {{ value }}
+                            {% endif %}
+                        </td>
+                        <td> 
+                            {% if value is null %}
+                                {% if key != "yatzy" and key != "bonus" %}
+                                    <input type="radio" name="values" value="{{key}}">
+                                    <label for="{{key}}"></label><br>
+                                {% endif %}
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                
+                {% for key, value in data.scoreextra %}
+                    <tr>
+                       <td> {{ key }} </td>
+                       <td> {{ value }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+            {% if data.gameover != 1 %}
+                <input type="submit" value="Välj">
+            {% endif %}
+        </form>
+    </div>
+    {# <p>{{ message }}</p> #}
+   {# {{dump(data)}}
+   {# {{dump(request)}} #}
+   {# {{dump(data.rolled)}} #}
+</div>
+
+{% include 'footer.twig' %}
