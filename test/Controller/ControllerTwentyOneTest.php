@@ -5,22 +5,23 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use PHPUnit\Framework\TestCase;
-use Psr\Http\Message\ResponseInterface;
-use Frah\DiceGame;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Symfony\Component\HttpFoundation\Response;
+use App\Controller\TwentyOneController;
 
 class ControllerTwentyOneTest extends TestCase
 {
     public function testCreateTheControllerClass()
     {
-        $controller = new TwentyOne();
-        $this->assertInstanceOf("\Mos\Controller\TwentyOne", $controller);
+        $controller = new TwentyOneController();
+        $this->assertInstanceOf("\App\Controller\TwentyOneController", $controller);
     }
 
     public function testTwentyOneControllerReturnsResponse()
     {
-        $controller = new TwentyOne();
+        $controller = new TwentyOneController();
 
-        $exp = "\Psr\Http\Message\ResponseInterface";
+        $exp = "\Symfony\Component\HttpFoundation\Response";
         $res = $controller->start();
         $this->assertInstanceOf($exp, $res);
 
@@ -36,8 +37,8 @@ class ControllerTwentyOneTest extends TestCase
 
     public function testContinueTwentyOne()
     {
-        $game = new TwentyOne();
-        $exp = "\Psr\Http\Message\ResponseInterface";
+        $game = new TwentyOneController();
+        $exp = "\Symfony\Component\HttpFoundation\Response";
 
         $_POST["ongoing"] = 1;
         $res = $game->continue();

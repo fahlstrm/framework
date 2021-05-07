@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace App\Controller\Test;
 
 use PHPUnit\Framework\TestCase;
+use App\Controller\TwentyOne\DiceTwentyOne;
+
 
 class TwentyOneDiceTest extends TestCase
 {
@@ -15,7 +17,7 @@ class TwentyOneDiceTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->dice = new Dice(6);
+        $this->dice = new DiceTwentyOne(6);
     }
 
     /**

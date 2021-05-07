@@ -14,10 +14,7 @@ use App\Controller\Functions;
 
 class YatzyController extends AbstractController
 {
-    /**
-     * @param $request
-     */
-    public function start(SessionInterface $session, Request $request): Response
+    public function start(SessionInterface $session): Response
     {
         $callable = new GameYatzy(new DiceHand(5, new GameDice()));
         $session->set("yatzyObject", $callable);
@@ -30,10 +27,6 @@ class YatzyController extends AbstractController
             ]);
     }
 
-
-    /**
-     * @param $request
-     */
     public function roll(Request $request): Response
     {
         $callable = $this->get("session")->get("yatzyObject");
@@ -46,10 +39,6 @@ class YatzyController extends AbstractController
             ]);
     }
 
-
-    /**
-     * @param $request
-     */
     public function save(Request $request): Response
     {
         $callable = $this->get("session")->get("yatzyObject");
@@ -62,7 +51,7 @@ class YatzyController extends AbstractController
             ]);
     }
 
-    public function reset(Request $request): Response
+    public function reset(): Response
     {
         $callable = $this->get("session")->get("yatzyObject");
         $data = $callable->resetGame();

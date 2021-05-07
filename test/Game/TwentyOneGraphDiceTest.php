@@ -5,8 +5,10 @@ declare(strict_types=1);
 namespace App\Controller\Test;
 
 use PHPUnit\Framework\TestCase;
+use App\Controller\TwentyOne\GraphicalDice;
 
-class YatzyDiceTest extends TestCase
+
+class TwentyOneGraphDiceTest extends TestCase
 {
     /**
      * Yatzy GameDice class uses DiceTrait
@@ -15,11 +17,11 @@ class YatzyDiceTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->dice = new GameDice();
+        $this->dice = new GraphicalDice();
     }
 
     /**
-     * Test to roll dices
+     * Test to roll dice
      */
     public function testRollGameDice()
     {
@@ -28,7 +30,7 @@ class YatzyDiceTest extends TestCase
     }
 
     /**
-     * Test that result equals whats rolled
+     * Test to get last roll
      */
     public function testGetLastRollGameDice()
     {

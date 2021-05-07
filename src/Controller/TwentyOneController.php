@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\HttpFoundation\Request;
+use App\Controller\TwentyOne;
 use App\Controller\TwentyOne\GameTwentyOne;
 use App\Controller\TwentyOne\DiceHand;
 use App\Controller\TwentyOne\GameDice;
@@ -14,7 +15,7 @@ use App\Controller\Functions;
 
 class TwentyOneController extends AbstractController
 {
-    public function start(SessionInterface $session, Request $request): Response
+    public function start(SessionInterface $session): Response
     {
         $callable = new GameTwentyOne();
         $session->clear();
@@ -53,11 +54,11 @@ class TwentyOneController extends AbstractController
         $callable = $this->get("session")->get("twentyOneObject");
         $result = null;
 
-        if (null !== $request->request->get("ongoing")) {
+        if (null !== $request->get("ongoing")) {
             $result = $callable->playGamePlayer();
-        } else if (null !== $request->request->get("stop")) {
+        } else if (null !== $request->get("stop")) {
             $result = $callable->playGameComputer();
-        } else if ($request->request->get("ongoing") == null && $requst->request->get("stop") == null) {
+        } else if ($request->get("ongoing") == null && $request->get("stop") == null) {
             $result = [];
         }
 
@@ -69,7 +70,7 @@ class TwentyOneController extends AbstractController
             ]);
     }
 
-    public function reset(Request $request): Response
+    public function reset(): Response
     {
         $data = [
             "header" => "Spelet 21",

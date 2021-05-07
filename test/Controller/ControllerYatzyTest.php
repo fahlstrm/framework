@@ -5,22 +5,23 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use PHPUnit\Framework\TestCase;
-use Psr\Http\Message\ResponseInterface;
-use Frah\YatzyGame;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Symfony\Component\HttpFoundation\Response;
+use App\Controller\YatzyController;
+
 
 class ControllerYatzyTest extends TestCase
 {
     public function testCreateTheControllerClass()
     {
-        $controller = new Yatzy();
-        $this->assertInstanceOf("\Mos\Controller\Yatzy", $controller);
+        $controller = new YatzyController();
+        $this->assertInstanceOf("\App\Controller\YatzyController", $controller);
     }
 
     public function testYatzyControllerReturnsResponse()
     {
-        $controller = new Yatzy();
-
-        $exp = "\Psr\Http\Message\ResponseInterface";
+        $controller = new YatzyController();
+        $exp = "\Symfony\Component\HttpFoundation\Response";
         $res = $controller->start();
         $this->assertInstanceOf($exp, $res);
 
