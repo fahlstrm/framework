@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-// namespace Frah\TwentyOne;
 namespace App\Controller\TwentyOne;
 use Psr\Log\LoggerInterface;
 
@@ -14,7 +13,7 @@ class DiceHandTwentyOne
     public function __construct(int $amount, object $dice)
     {
         for ($i = 0; $i < $amount; $i++) {
-            $this->dices[$i] = new $dice;
+            $this->dices[$i] = new $dice();
         }
     }
 

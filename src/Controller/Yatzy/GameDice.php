@@ -6,9 +6,7 @@
 
 declare(strict_types=1);
 
-// namespace Frah\YatzyGame;
 namespace App\Controller\Yatzy;
-
 
 class GameDice
 {
