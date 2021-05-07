@@ -6,6 +6,9 @@ namespace App\Controller\Test;
 
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
+use App\Controller\TwentyOne\GameTwentyOne;
+use App\Controller\TwentyOne\DiceHand;
+use App\Controller\TwentyOne\GameDice;
 
 class TwentyOneGameTest extends TestCase
 {
@@ -19,7 +22,7 @@ class TwentyOneGameTest extends TestCase
      */
     protected function setUp(): void
     {
-        $this->game = new Game();
+        $this->game = new GameTwentyOne();
     }
 
     /**
@@ -40,12 +43,12 @@ class TwentyOneGameTest extends TestCase
         $res = $this->game->playGamePlayer($data);
         $this->assertIsArray($res);
 
-        $mockDice = $this->createMock("\Frah\DiceGame\Dice");
-        $mockDice = $this->getMockBuilder("\Frah\DiceGame\Dice")->getMock();
+        $mockDice = $this->createMock("\App\Controller\TwentyOne\DiceTwentyOne");
+        $mockDice = $this->getMockBuilder("\App\Controller\TwentyOne\DiceTwentyOne")->getMock();
         $mockDice->roll = 0;
         $mockDice->method("getLastRoll")->willReturn(0);
         $mockDice->method("roll")->willReturn(0);
-        $playersDice = $this->getMockBuilder("\Frah\DiceGame\DiceHand")
+        $playersDice = $this->getMockBuilder("\App\Controller\TwentyOne\DiceHandTwentyOne")
                 ->setConstructorArgs(array(1, $mockDice))
                 ->getMock();
         $playersDice->sum = 21;
@@ -70,15 +73,15 @@ class TwentyOneGameTest extends TestCase
         $res = $this->game->playGameComputer($data);
         $this->assertIsArray($res);
 
-        $mockDice = $this->createMock("\Frah\DiceGame\Dice");
-        $mockDice = $this->getMockBuilder("\Frah\DiceGame\Dice")->getMock();
+        $mockDice = $this->createMock("\App\Controller\TwentyOne\DiceTwentyOne");
+        $mockDice = $this->getMockBuilder("\App\Controller\TwentyOne\DiceTwentyOne")->getMock();
         $mockDice->roll = 5;
-        $computersDice = $this->getMockBuilder("\Frah\DiceGame\DiceHand")
+        $computersDice = $this->getMockBuilder("\App\Controller\TwentyOne\DiceHandTwentyOne")
                 ->setConstructorArgs(array(1, $mockDice))
                 ->getMock();
         $computersDice->sum = 20;
 
-        $playersDice = $this->getMockBuilder("\Frah\DiceGame\DiceHand")
+        $playersDice = $this->getMockBuilder("\App\Controller\TwentyOne\DiceHandTwentyOne")
             ->setConstructorArgs(array(1, $mockDice))
             ->getMock();
         $playersDice->sum = 18;
@@ -160,7 +163,7 @@ class TwentyOneGameTest extends TestCase
      */
     public function testResetGame()
     {
-        $class = new ReflectionClass("\Frah\DiceGame\Game");
+        $class = new ReflectionClass("\App\Controller\TwentyOne\GameTwentyOne");
         $method = $class->getMethod("resetGame");
         $method->setAccessible(true);
         $this->data = [
@@ -178,7 +181,7 @@ class TwentyOneGameTest extends TestCase
      */
     public function testCreateDices()
     {
-        $class = new ReflectionClass("\Frah\DiceGame\Game");
+        $class = new ReflectionClass("\App\Controller\TwentyOne\GameTwentyOne");
         $playersDice = $class->getProperty("playersDice");
         $computersDice = $class->getProperty("computersDice");
         $this->game->createDices(1);

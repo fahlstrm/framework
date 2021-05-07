@@ -1,0 +1,56 @@
+PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
+
+.EE.E..........F....FE........E............                       43 / 43 (100%)
+
+Time: 00:00.594, Memory: 22.00 MB
+
+There were 5 errors:
+
+1) App\Controller\ControllerTwentyOneTest::testTwentyOneControllerReturnsResponse
+ArgumentCountError: Too few arguments to function App\Controller\TwentyOneController::start(), 0 passed in C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\test\Controller\ControllerTwentyOneTest.php on line 25 and exactly 1 expected
+
+C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOneController.php:18
+C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\test\Controller\ControllerTwentyOneTest.php:25
+
+2) App\Controller\ControllerTwentyOneTest::testContinueTwentyOne
+ArgumentCountError: Too few arguments to function App\Controller\TwentyOneController::continue(), 0 passed in C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\test\Controller\ControllerTwentyOneTest.php on line 44 and exactly 1 expected
+
+C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOneController.php:52
+C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\test\Controller\ControllerTwentyOneTest.php:44
+
+3) App\Controller\ControllerYatzyTest::testYatzyControllerReturnsResponse
+ArgumentCountError: Too few arguments to function App\Controller\YatzyController::start(), 0 passed in C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\test\Controller\ControllerYatzyTest.php on line 25 and exactly 1 expected
+
+C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\YatzyController.php:17
+C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\test\Controller\ControllerYatzyTest.php:25
+
+4) App\Controller\Test\YatzyDiceHandTest::testGetLastRollGameDice
+Error: Call to undefined method App\Controller\TwentyOne\DiceHandTwentyOne::getLastRoll()
+
+C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\test\Game\YatzyDiceHandTest.php:39
+
+5) App\Controller\Test\YatzyTest::testUpdateScoreBoardFinal
+ReflectionException: Class Mock_DiceHand_ed95585a does not have a constructor, so you cannot pass any constructor arguments
+
+C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\test\Game\YatzyTest.php:118
+
+--
+
+There were 2 failures:
+
+1) App\Controller\Test\TwentyOneGameTest::testMergeData
+Failed asserting that actual size 3 matches expected size 2.
+
+C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\test\Game\TwentyOneGameTest.php:200
+
+2) App\Controller\Test\YatzyDiceHandTest::testRollDiceHand
+Failed asserting that 17 is of type "array".
+
+C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\test\Game\YatzyDiceHandTest.php:30
+
+ERRORS!
+Tests: 43, Assertions: 51, Errors: 5, Failures: 2.
+
+Generating code coverage report in Clover XML format ... done [00:00.111]
+
+Generating code coverage report in HTML format ... done [00:00.333]

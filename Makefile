@@ -6,8 +6,8 @@ PHPCBF     := $(BIN)/phpcbf
 PHPCPD     := $(BIN)/phpcpd
 PHPMD      := $(BIN)/phpmd
 VENDOR 		:= vendor
-PHPSTAN    := $(VENDOR)/phpstan
-PHPUNIT    := $(VENDOR)/phpunit
+PHPSTAN    := $(VENDORBIN)/phpstan
+PHPUNIT    := $(VENDORBIN)/phpunit
 
 all:
 	@echo "Review the file 'Makefile' to see what targets are supported."

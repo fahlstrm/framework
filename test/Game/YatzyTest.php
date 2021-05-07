@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace App\Controller\Test;
 
 use PHPUnit\Framework\TestCase;
+use App\Controller\Yatzy\GameDice;
+use App\Controller\Yatzy\DiceHand;
+use App\Controller\Yatzy\GameYatzy;
+
 
 /**
  * Test methods in Yatzy game class
@@ -18,7 +22,7 @@ class YatzyTest extends TestCase
      */
     protected function setUp(): void
     {
-        $this->game = new Game(new DiceHand(5, new GameDice()));
+        $this->game = new GameYatzy(new DiceHand(5, new GameDice()));
     }
 
     /**
@@ -83,12 +87,12 @@ class YatzyTest extends TestCase
      */
     public function testUpdateScoreBoard()
     {
-        $mockDice = $this->createMock("\Frah\YatzyGame\GameDice");
-        $mockDice = $this->getMockBuilder("\Frah\YatzyGame\GameDice")->getMock();
+        $mockDice = $this->createMock("\App\Controller\Yatzy\GameDice");
+        $mockDice = $this->getMockBuilder("\App\Controller\Yatzy\GameDice")->getMock();
         $mockDice->roll = 6;
         $mockDice->method("getLastRoll")->willReturn(6);
         $mockDice->method("roll")->willReturn(6);
-        $mockHand = $this->getMockBuilder("\Frah\YatzyGame\DiceHand")
+        $mockHand = $this->getMockBuilder("\App\Controller\Yatzy\DiceHand")
                 ->setConstructorArgs(array(5, $mockDice))
                 ->getMock();
         $mockHand->method("getLastRoll")->willReturn([6, 6, 6, 6, 6]);
@@ -104,12 +108,12 @@ class YatzyTest extends TestCase
      */
     public function testUpdateScoreBoardFinal()
     {
-        $mockDice = $this->createMock("\Frah\YatzyGame\GameDice");
-        $mockDice = $this->getMockBuilder("\Frah\YatzyGame\GameDice")->getMock();
+        $mockDice = $this->createMock("\App\Controller\Yatzy\GameDice");
+        $mockDice = $this->getMockBuilder("\App\Controller\Yatzy\GameDice")->getMock();
         $mockDice->roll = 6;
         $mockDice->method("getLastRoll")->willReturn(6);
         $mockDice->method("roll")->willReturn(6);
-        $mockHand = $this->getMockBuilder("\Frah\YatzyGame\DiceHand")
+        $mockHand = $this->getMockBuilder("\App\Controller\TwentyOne\DiceHand")
                 ->setConstructorArgs(array(5, $mockDice))
                 ->getMock();
         $mockHand->method("getLastRoll")->willReturn([6, 6, 6, 1, 6]);
@@ -176,12 +180,12 @@ class YatzyTest extends TestCase
      */
     public function testCheckYatzyTrue()
     {
-        $mockDice = $this->createMock("\Frah\YatzyGame\GameDice");
-        $mockDice = $this->getMockBuilder("\Frah\YatzyGame\GameDice")->getMock();
+        $mockDice = $this->createMock("\App\Controller\Yatzy\GameDice");
+        $mockDice = $this->getMockBuilder("\App\Controller\Yatzy\GameDice")->getMock();
         $mockDice->roll = 6;
         $mockDice->method("getLastRoll")->willReturn(6);
         $mockDice->method("roll")->willReturn(6);
-        $mockHand = $this->getMockBuilder("\Frah\YatzyGame\DiceHand")
+        $mockHand = $this->getMockBuilder("\App\Controller\Yatzy\DiceHand")
                 ->setConstructorArgs(array(5, $mockDice))
                 ->getMock();
         $mockHand->method("getLastRoll")->willReturn([6, 6, 6, 6, 6]);

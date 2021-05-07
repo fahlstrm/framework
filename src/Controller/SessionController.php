@@ -5,16 +5,13 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use App\Controller\Functions;
 
 class SessionController extends AbstractController
 {
-
-    /**
-     * @Route("/")
-    */
-    public function __invoke(SessionInterface $session): Response
+    public function __invoke(): Response
     {
         return $this->render('session.twig', [
             'title' => 'Förstör sessionen',
@@ -25,7 +22,7 @@ class SessionController extends AbstractController
 
     public function destroy(Request $request): Response
     {
-        $session = $request->getSession->invalidate();
+        $request->getSession->invalidate();
         return $this->render('index.twig', [
             'title' => 'Spel i Symfony',
             'message' => "Välj spel i navbaren",

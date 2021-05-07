@@ -1,12 +1,4 @@
-C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\SessionController.php:17	Avoid unused parameters such as '$session'.
-C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\SessionController.php:28	Avoid unused local variables such as '$session'.
-C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\Test\YatzyTest.php:12	The class YatzyTest has 19 public methods. Consider refactoring YatzyTest to keep number of public methods under 10.
-C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOneController.php:17	Avoid unused parameters such as '$request'.
-C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOneController.php:60	Avoid using undefined variables such as '$requst' which will lead to PHP notices.
-C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOneController.php:60	Avoid unused local variables such as '$requst'.
-C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOneController.php:72	Avoid unused parameters such as '$request'.
-C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\YatzyController.php:20	Avoid unused parameters such as '$request'.
-C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\YatzyController.php:65	Avoid unused parameters such as '$request'.
 C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\Yatzy\GameYatzy.php:7	The class GameYatzy has 11 public methods. Consider refactoring GameYatzy to keep number of public methods under 10.
 C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Kernel.php:14	Avoid assigning values to variables in if clauses and the like (line '22', column '27').
 C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Kernel.php:27	Avoid assigning values to variables in if clauses and the like (line '34', column '27').
+C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\test\Game\YatzyTest.php:16	The class YatzyTest has 19 public methods. Consider refactoring YatzyTest to keep number of public methods under 10.
