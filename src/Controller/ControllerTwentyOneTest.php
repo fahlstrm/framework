@@ -44,7 +44,7 @@ class ControllerTwentyOneTest extends TestCase
         $this->assertInstanceOf($exp, $res);
 
         $_POST["ongoing"] = null;
-      
+
         $_POST["stop"] = 1;
         $res = $game->continue();
         $this->assertInstanceOf($exp, $res);

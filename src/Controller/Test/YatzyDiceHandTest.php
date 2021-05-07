@@ -1,12 +1,12 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
-namespace App\Controller;
+namespace App\Controller\Test;
 
 use PHPUnit\Framework\TestCase;
 
-class YatzyDiceHandTest extends TestCase 
+class YatzyDiceHandTest extends TestCase
 {
     /**
      * Testing functions of DiceHand in Yatzy game
@@ -15,7 +15,7 @@ class YatzyDiceHandTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->diceHand = new DiceHand(5, new GameDice);
+        $this->diceHand = new DiceHand(5, new GameDice());
     }
 
     /**
