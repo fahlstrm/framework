@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
@@ -6,7 +6,7 @@ namespace App\Controller;
 
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
-use \Frah\DiceGame;
+use Frah\DiceGame;
 
 class ControllerTwentyOneTest extends TestCase
 {
@@ -27,11 +27,9 @@ class ControllerTwentyOneTest extends TestCase
         $res = $controller->play();
         $this->assertInstanceOf($exp, $res);
 
-
         $res = $controller->continue();
         $this->assertInstanceOf($exp, $res);
 
-        
         $res = $controller->reset();
         $this->assertInstanceOf($exp, $res);
     }
@@ -46,7 +44,7 @@ class ControllerTwentyOneTest extends TestCase
         $this->assertInstanceOf($exp, $res);
 
         $_POST["ongoing"] = null;
-            
+      
         $_POST["stop"] = 1;
         $res = $game->continue();
         $this->assertInstanceOf($exp, $res);
