@@ -9,7 +9,6 @@ use App\Controller\Yatzy\GameDice;
 use App\Controller\Yatzy\DiceHand;
 use App\Controller\Yatzy\GameYatzy;
 
-
 /**
  * Test methods in Yatzy game class
  */
@@ -113,7 +112,7 @@ class YatzyTest extends TestCase
         $mockDice->roll = 6;
         $mockDice->method("getLastRoll")->willReturn(6);
         $mockDice->method("roll")->willReturn(6);
-        $mockHand = $this->getMockBuilder("\App\Controller\TwentyOne\DiceHand")
+        $mockHand = $this->getMockBuilder("\App\Controller\Yatzy\DiceHand")
                 ->setConstructorArgs(array(5, $mockDice))
                 ->getMock();
         $mockHand->method("getLastRoll")->willReturn([6, 6, 6, 1, 6]);

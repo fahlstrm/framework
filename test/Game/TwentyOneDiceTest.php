@@ -7,7 +7,6 @@ namespace App\Controller\Test;
 use PHPUnit\Framework\TestCase;
 use App\Controller\TwentyOne\DiceTwentyOne;
 
-
 class TwentyOneDiceTest extends TestCase
 {
     /**
