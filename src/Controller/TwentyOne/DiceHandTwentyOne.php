@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace App\Controller\TwentyOne;
+
 use Psr\Log\LoggerInterface;
 
 class DiceHandTwentyOne
@@ -27,7 +28,6 @@ class DiceHandTwentyOne
         return $this->sum;
     }
 
-    
 
     public function lastRoll(): string
     {
