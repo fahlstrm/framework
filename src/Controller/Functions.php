@@ -18,9 +18,4 @@ class Functions
             'url' => 'session'
         ]
     ];
-
-    public function getNav(): array
-    {
-        return $this->nav;
-    }
 }
