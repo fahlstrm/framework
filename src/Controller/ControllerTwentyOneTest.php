@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mos\Controller;
+namespace App\Controller;
 
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;

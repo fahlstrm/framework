@@ -41,15 +41,16 @@ PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: ...sers\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\ControllerYatzyTest.php
 ------------------------------------------------------------------------------------------
-FOUND 5 ERRORS AFFECTING 5 LINES
+FOUND 6 ERRORS AFFECTING 5 LINES
 ------------------------------------------------------------------------------------------
   1 | ERROR | [x] Whitespace found at end of line
   9 | ERROR | [x] Import statements must not begin with a leading backslash
+  9 | ERROR | [x] Whitespace found at end of line
  30 | ERROR | [x] Whitespace found at end of line
  34 | ERROR | [x] Whitespace found at end of line
  38 | ERROR | [x] Expected 1 newline at end of file; 0 found
 ------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 6 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------------
 
 
@@ -229,41 +230,6 @@ PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------------
 
 
-FILE: C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\YatzyController.php
-------------------------------------------------------------------------------------------
-FOUND 13 ERRORS AFFECTING 12 LINES
-------------------------------------------------------------------------------------------
-  9 | ERROR | [x] Header blocks must not contain blank lines
- 11 | ERROR | [x] Import statements must not begin with a leading backslash
- 12 | ERROR | [x] Import statements must not begin with a leading backslash
- 13 | ERROR | [x] Import statements must not begin with a leading backslash
- 14 | ERROR | [x] Import statements must not begin with a leading backslash
- 24 | ERROR | [x] Parentheses must be used when instantiating a new class
- 41 | ERROR | [x] Whitespace found at end of line
- 49 | ERROR | [x] Expected 0 spaces before closing parenthesis; newline found
- 52 | ERROR | [x] Whitespace found at end of line
- 66 | ERROR | [x] Expected 0 spaces before closing parenthesis; newline found
- 79 | ERROR | [x] Expected 0 spaces before closing parenthesis; newline found
- 82 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 82 | ERROR | [x] The closing brace for the class must go on the next line after the body
-------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 13 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
-
-
-FILE: C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Form\YatzyForm.php
-------------------------------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 3 LINES
-------------------------------------------------------------------------------------------
-  1 | ERROR | [x] Whitespace found at end of line
- 21 | ERROR | [x] Whitespace found at end of line
- 22 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 22 | ERROR | [x] The closing brace for the class must go on the next line after the body
-------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
-
-
 FILE: C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Kernel.php
 ----------------------------------------------------------------------
 FOUND 20 ERRORS AFFECTING 7 LINES
@@ -309,5 +275,5 @@ FOUND 8 ERRORS AFFECTING 4 LINES
 PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ---------------------------------------------------------------------------
 
-Time: 4.73 secs; Memory: 8MB
+Time: 4.34 secs; Memory: 8MB
 

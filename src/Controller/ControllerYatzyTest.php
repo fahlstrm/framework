@@ -6,7 +6,7 @@ namespace App\Controller;
 
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
-use \Frah\YatzyGame;
+use \Frah\YatzyGame;    
 
 class ControllerYatzyTest extends TestCase
 {
