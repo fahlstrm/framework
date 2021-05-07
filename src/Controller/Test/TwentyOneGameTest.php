@@ -1,14 +1,13 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
-namespace App\Controller;
+namespace App\Controller\Test;
 
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
-// use \Frah\DiceGame\Game;
 
-class TwentyOneGameTest extends TestCase 
+class TwentyOneGameTest extends TestCase
 {
     /**
      * Testing functions of DiceHand in Yatzy game
@@ -163,7 +162,7 @@ class TwentyOneGameTest extends TestCase
     {
         $class = new ReflectionClass("\Frah\DiceGame\Game");
         $method = $class->getMethod("resetGame");
-        $method->setAccessible(true); 
+        $method->setAccessible(true);
         $this->data = [
             "computersum" => 4,
             "playersum" => 2,
@@ -173,7 +172,7 @@ class TwentyOneGameTest extends TestCase
         $this->assertEquals(null, $res["computersum"]);
         $this->assertIsArray($res);
     }
-    
+
     /**
      * Test that createdices creates two objects
      */
@@ -199,7 +198,5 @@ class TwentyOneGameTest extends TestCase
 
         $data = ["computersum" => 2, "playersum" => 1];
         $this->assertCount(4, $this->game->mergeData($data));
-
     }
-
 }

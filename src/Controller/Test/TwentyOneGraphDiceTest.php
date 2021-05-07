@@ -1,12 +1,12 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
-namespace App\Controller;
+namespace App\Controller\Test;
 
 use PHPUnit\Framework\TestCase;
 
-class TwentyOneGraphDiceTest extends TestCase 
+class TwentyOneGraphDiceTest extends TestCase
 {
     /**
      * Yatzy GameDice class uses DiceTrait

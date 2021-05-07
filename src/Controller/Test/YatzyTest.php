@@ -1,25 +1,24 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
-namespace App\Controller;
+namespace App\Controller\Test;
 
 use PHPUnit\Framework\TestCase;
-// use Psr\Http\Message\ResponseInterface;
 
 /**
  * Test methods in Yatzy game class
  */
 class YatzyTest extends TestCase
 {
-    private object $game; 
+    private object $game;
 
     /**
-     * The setUp for each test 
+     * The setUp for each test
      */
     protected function setUp(): void
     {
-        $this->game = new Game(new DiceHand(5, new GameDice));
+        $this->game = new Game(new DiceHand(5, new GameDice()));
     }
 
     /**
@@ -61,7 +60,7 @@ class YatzyTest extends TestCase
         $this->game->startGame();
         $last = $this->game->diceHand->getLastRoll();
         $exp = $last[0];
-        $throw = array("1"=> $last[1], "2"=> $last[2], "3" =>  $last[3], "4" => $last[4]);
+        $throw = array("1" => $last[1], "2" => $last[2], "3" => $last[3], "4" => $last[4]);
         $res = $this->game->rollAgain($throw, $last);
         $this->assertEquals($exp, $res["rolled"][0]);
     }
@@ -74,7 +73,7 @@ class YatzyTest extends TestCase
         $this->game->startGame();
         $last = $this->game->diceHand->getLastRoll();
         $exp = array($last[0], $last[4]);
-        $throw = array("1"=> $last[1], "2"=> $last[2], "3" =>  $last[3]);
+        $throw = array("1" => $last[1], "2" => $last[2], "3" => $last[3]);
         $res = $this->game->rollAgain($throw, $last);
         $this->assertEquals($exp, [$res["rolled"][0], $res["rolled"][4]]);
     }
@@ -93,7 +92,7 @@ class YatzyTest extends TestCase
                 ->setConstructorArgs(array(5, $mockDice))
                 ->getMock();
         $mockHand->method("getLastRoll")->willReturn([6, 6, 6, 6, 6]);
-    
+
         $this->game->diceHand = $mockHand;
 
         $res = $this->game->updateScoreBoard(6);
@@ -114,7 +113,7 @@ class YatzyTest extends TestCase
                 ->setConstructorArgs(array(5, $mockDice))
                 ->getMock();
         $mockHand->method("getLastRoll")->willReturn([6, 6, 6, 1, 6]);
-    
+
         $this->game->diceHand = $mockHand;
 
         $scoreBoard = [
@@ -279,13 +278,9 @@ class YatzyTest extends TestCase
     /**
      * Test that resetGame returns array
      */
-    public function testResetGame() 
+    public function testResetGame()
     {
         $res = $this->game->resetGame();
         $this->assertIsArray($res);
     }
-
 }
-
-
-
