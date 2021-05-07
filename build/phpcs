@@ -115,42 +115,20 @@ PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: ...da\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOne\DiceHandTwentyOne.php
 ------------------------------------------------------------------------------------------
-FOUND 3 ERRORS AFFECTING 3 LINES
-------------------------------------------------------------------------------------------
-  6 | ERROR | [x] Header blocks must be separated by a single blank line
- 17 | ERROR | [x] Parentheses must be used when instantiating a new class
- 31 | ERROR | [x] Whitespace found at end of line
-------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
-
-
-FILE: ...\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOne\DiceTwentyOne.php
-------------------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-------------------------------------------------------------------------------------------
- 6 | ERROR | [x] Header blocks must be separated by a single blank line
-------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
-
-
-FILE: ...\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOne\GameTwentyOne.php
-------------------------------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
 ------------------------------------------------------------------------------------------
-   6 | ERROR | [x] Header blocks must be separated by a single blank line
- 134 | ERROR | [x] Whitespace found at end of line
+  5 | ERROR | [x] Header blocks must be separated by a single blank line
+ 30 | ERROR | [x] Whitespace found at end of line
 ------------------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------------
 
 
-FILE: ...\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOne\GraphicalDice.php
+FILE: ...\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOne\GameTwentyOne.php
 ------------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ------------------------------------------------------------------------------------------
- 6 | ERROR | [x] Header blocks must be separated by a single blank line
+ 132 | ERROR | [x] Whitespace found at end of line
 ------------------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------------
@@ -158,75 +136,19 @@ PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: ...sers\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOneController.php
 ------------------------------------------------------------------------------------------
-FOUND 11 ERRORS AFFECTING 11 LINES
+FOUND 9 ERRORS AFFECTING 9 LINES
 ------------------------------------------------------------------------------------------
-  9 | ERROR | [x] Header blocks must not contain blank lines
+ 10 | ERROR | [x] Import statements must not begin with a leading backslash
  11 | ERROR | [x] Import statements must not begin with a leading backslash
  12 | ERROR | [x] Import statements must not begin with a leading backslash
  13 | ERROR | [x] Import statements must not begin with a leading backslash
- 14 | ERROR | [x] Import statements must not begin with a leading backslash
- 21 | ERROR | [x] Whitespace found at end of line
+ 20 | ERROR | [x] Whitespace found at end of line
+ 39 | ERROR | [x] Whitespace found at end of line
  40 | ERROR | [x] Whitespace found at end of line
- 41 | ERROR | [x] Whitespace found at end of line
- 57 | ERROR | [x] Whitespace found at end of line
- 82 | ERROR | [x] Whitespace found at end of line
- 93 | ERROR | [x] Expected 1 newline at end of file; 0 found
+ 56 | ERROR | [x] Whitespace found at end of line
+ 81 | ERROR | [x] Whitespace found at end of line
 ------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 11 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
-
-
-FILE: C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\Yatzy\DiceHand.php
------------------------------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 4 LINES
------------------------------------------------------------------------------------------
-  6 | ERROR | [x] Header blocks must be separated by a single blank line
-  7 | ERROR | [x] Whitespace found at end of line
-  8 | ERROR | [x] Header blocks must be separated by a single blank line
- 20 | ERROR | [x] Parentheses must be used when instantiating a new class
------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
------------------------------------------------------------------------------------------
-
-
-FILE: ...sers\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\Yatzy\DiceInterface.php
-------------------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-------------------------------------------------------------------------------------------
- 10 | ERROR | [x] Header blocks must be separated by a single blank line
-------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
-
-
-FILE: C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\Yatzy\DiceTrait.php
-------------------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-------------------------------------------------------------------------------------------
- 10 | ERROR | [x] Header blocks must be separated by a single blank line
-------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
-
-
-FILE: C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\Yatzy\GameDice.php
------------------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
------------------------------------------------------------------------------------------
- 10 | ERROR | [x] Header blocks must be separated by a single blank line
------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
------------------------------------------------------------------------------------------
-
-
-FILE: C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\Yatzy\GameYatzy.php
-------------------------------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 2 LINES
-------------------------------------------------------------------------------------------
-   6 | ERROR | [x] Header blocks must be separated by a single blank line
- 202 | ERROR | [x] Whitespace found at end of line
-------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------------
 
 
@@ -275,5 +197,5 @@ FOUND 8 ERRORS AFFECTING 4 LINES
 PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ---------------------------------------------------------------------------
 
-Time: 4.34 secs; Memory: 8MB
+Time: 4.36 secs; Memory: 8MB
 

@@ -7,20 +7,18 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\HttpFoundation\Request;
-
-use \App\Controller\TwentyOne\GameTwentyOne;
-use \App\Controller\TwentyOne\DiceHand;
-use \App\Controller\TwentyOne\GameDice;
-use \App\Controller\Functions;
+use App\Controller\TwentyOne\GameTwentyOne;
+use App\Controller\TwentyOne\DiceHand;
+use App\Controller\TwentyOne\GameDice;
+use App\Controller\Functions;
 
 class TwentyOneController extends AbstractController
 {
     public function start(SessionInterface $session, Request $request): Response
     {
         $callable = new GameTwentyOne();
-        $session->clear();        
+        $session->clear();
         $session->set("twentyOneObject", $callable);
-
 
         $data = $callable->startGame();
 
@@ -36,9 +34,7 @@ class TwentyOneController extends AbstractController
 
     public function play(SessionInterface $session, Request $request): Response
     {
-
-        $callable = $this->get("session")->get("twentyOneObject");  
- 
+        $callable = $this->get("session")->get("twentyOneObject");
         $session->set("newGame", null);
         $session->set("continue", "ongoing");
         $callable->createDices(intval($request->request->get("amount")));
@@ -54,7 +50,7 @@ class TwentyOneController extends AbstractController
 
     public function continue(Request $request): Response
     {
-        $callable = $this->get("session")->get("twentyOneObject");  
+        $callable = $this->get("session")->get("twentyOneObject");
         $result = null;
 
         if (null !== $request->request->get("ongoing")) {
@@ -79,7 +75,7 @@ class TwentyOneController extends AbstractController
             "header" => "Spelet 21",
             "message" => "Välj antal tärningar",
         ];
-        $callable = $this->get("session")->get("twentyOneObject");  
+        $callable = $this->get("session")->get("twentyOneObject");
 
         $callable->resetScore();
         $data = $callable->resetGame();

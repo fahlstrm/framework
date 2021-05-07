@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-// namespace Frah\YatzyGame;
 namespace App\Controller\Yatzy;
-
 
 class GameYatzy
 {
@@ -199,7 +197,6 @@ class GameYatzy
         return $this->scoreExtra["summa"];
     }
 
-    
 
     public function setScoreExtraYatzy(): int
     {

@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-// namespace Frah\TwentyOne;
 namespace App\Controller\TwentyOne;
-
 
 class DiceTwentyOne
 {
