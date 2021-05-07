@@ -2,9 +2,9 @@
 
 namespace App\Controller;
 
-class Functions 
+class Functions
 {
-    public static array $nav =  [
+    public static array $nav = [
         '21' => [
             'name' => '21',
             'url' => 'twentyone'

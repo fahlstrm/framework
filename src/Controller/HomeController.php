@@ -5,9 +5,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-
-use \App\Controller\Functions;
-
+use App\Controller\Functions;
 
 class HomeController extends AbstractController
 {
@@ -35,8 +33,6 @@ class HomeController extends AbstractController
             'title' => 'Spel i Symfony',
             'message' => "Välj spel i navbaren",
             'nav' => Functions::$nav
-            ],
-        );
+            ]);
     }
-    
 }

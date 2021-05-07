@@ -129,7 +129,6 @@ class GameTwentyOne
             "computerScore" => 0,
             "amount" => null
         ];
- 
         return $this->data;
     }
 

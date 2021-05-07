@@ -69,86 +69,35 @@ PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\Functions.php
 ------------------------------------------------------------------------------------
-FOUND 3 ERRORS AFFECTING 3 LINES
+FOUND 2 ERRORS AFFECTING 2 LINES
 ------------------------------------------------------------------------------------
-  5 | ERROR | [x] Whitespace found at end of line
-  6 | ERROR | [x] Expected 0 spaces before opening brace; 1 found
- 26 | ERROR | [x] Expected 1 newline at end of file; 0 found
+ 5 | ERROR | [x] Whitespace found at end of line
+ 6 | ERROR | [x] Expected 0 spaces before opening brace; 1 found
 ------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------
 
 
 FILE: C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\HomeController.php
-------------------------------------------------------------------------------------------
-FOUND 7 ERRORS AFFECTING 5 LINES
-------------------------------------------------------------------------------------------
-  7 | ERROR | [x] Header blocks must not contain blank lines
-  9 | ERROR | [x] Import statements must not begin with a leading backslash
-  9 | ERROR | [x] Header blocks must be separated by a single blank line
- 39 | ERROR | [x] Expected 0 spaces before closing parenthesis; newline found
- 41 | ERROR | [x] Whitespace found at end of line
- 42 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 42 | ERROR | [x] The closing brace for the class must go on the next line after the body
-------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+-----------------------------------------------------------------------------------------
+  8 | ERROR | [x] Import statements must not begin with a leading backslash
+ 36 | ERROR | [x] Expected 0 spaces before closing parenthesis; 1 found
+ 37 | ERROR | [x] Whitespace found at end of line
+-----------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-----------------------------------------------------------------------------------------
 
 
 FILE: ...\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\SessionController.php
 ------------------------------------------------------------------------------------------
-FOUND 9 ERRORS AFFECTING 7 LINES
-------------------------------------------------------------------------------------------
-  8 | ERROR | [x] Header blocks must not contain blank lines
- 11 | ERROR | [x] Import statements must not begin with a leading backslash
- 11 | ERROR | [x] Header blocks must be separated by a single blank line
- 27 | ERROR | [x] Expected 0 spaces before closing parenthesis; newline found
- 33 | ERROR | [x] Whitespace found at end of line
- 39 | ERROR | [x] Expected 0 spaces before closing parenthesis; newline found
- 41 | ERROR | [x] Whitespace found at end of line
- 42 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 42 | ERROR | [x] The closing brace for the class must go on the next line after the body
-------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
-
-
-FILE: ...da\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOne\DiceHandTwentyOne.php
-------------------------------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
 ------------------------------------------------------------------------------------------
-  5 | ERROR | [x] Header blocks must be separated by a single blank line
- 30 | ERROR | [x] Whitespace found at end of line
+ 23 | ERROR | [x] Expected 0 spaces before closing parenthesis; 1 found
+ 33 | ERROR | [x] Expected 0 spaces before closing parenthesis; 1 found
 ------------------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
-
-
-FILE: ...\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOne\GameTwentyOne.php
-------------------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
-------------------------------------------------------------------------------------------
- 132 | ERROR | [x] Whitespace found at end of line
-------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------
-
-
-FILE: ...sers\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\TwentyOneController.php
-------------------------------------------------------------------------------------------
-FOUND 9 ERRORS AFFECTING 9 LINES
-------------------------------------------------------------------------------------------
- 10 | ERROR | [x] Import statements must not begin with a leading backslash
- 11 | ERROR | [x] Import statements must not begin with a leading backslash
- 12 | ERROR | [x] Import statements must not begin with a leading backslash
- 13 | ERROR | [x] Import statements must not begin with a leading backslash
- 20 | ERROR | [x] Whitespace found at end of line
- 39 | ERROR | [x] Whitespace found at end of line
- 40 | ERROR | [x] Whitespace found at end of line
- 56 | ERROR | [x] Whitespace found at end of line
- 81 | ERROR | [x] Whitespace found at end of line
-------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------------
 
 
@@ -197,5 +146,5 @@ FOUND 8 ERRORS AFFECTING 4 LINES
 PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ---------------------------------------------------------------------------
 
-Time: 4.36 secs; Memory: 8MB
+Time: 4.33 secs; Memory: 8MB
 
