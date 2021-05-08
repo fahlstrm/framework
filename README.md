@@ -7,6 +7,7 @@ KOD
 --------------
 Skrivet i php i ramverket Symfony.
 Vyer renderade med Twig. Router via routes.yaml
+Använder ORM
 
 
 SKAPAD AV
