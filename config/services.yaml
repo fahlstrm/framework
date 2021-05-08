@@ -40,8 +40,4 @@ services:
             $amount: 'int'
             $dice: 'object'
 
-    App\Controller\SessionController:
-        arguments:
-            $request: 'object'
-
     
