@@ -2,7 +2,7 @@ PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
 
 ............F...........................                          40 / 40 (100%)
 
-Time: 00:00.646, Memory: 22.00 MB
+Time: 00:00.693, Memory: 22.00 MB
 
 There was 1 failure:
 
@@ -14,6 +14,6 @@ C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\test\Game\TwentyOneGameTest.ph
 FAILURES!
 Tests: 40, Assertions: 53, Failures: 1.
 
-Generating code coverage report in Clover XML format ... done [00:00.089]
+Generating code coverage report in Clover XML format ... done [00:00.095]
 
-Generating code coverage report in HTML format ... done [00:00.311]
+Generating code coverage report in HTML format ... done [00:00.329]
