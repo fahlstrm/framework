@@ -7,11 +7,31 @@ namespace App\Entity;
 use App\Repository\ProductRepository;
 use Doctrine\ORM\Mapping as ORM;
 
+/**
+ * @ORM\Entity(repositoryClass=ProductRepository::class)
+ */
 class Book
 {
+    /**
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
+     * @ORM\Column(type="integer")
+     */
     protected $id;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
     protected $title;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
     protected $isbn;
+
+    /**
+     * @ORM\Column(type="string", length=50)
+     */
     protected $author;
 
     public function getId(): ?int
