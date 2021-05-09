@@ -2,12 +2,12 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Dashboard for C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\Yatzy</title>
+  <title>Dashboard for C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Repository</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../../../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="../../../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
-  <link href="../../../_css/style.css" rel="stylesheet" type="text/css">
-  <link href="../../../_css/custom.css" rel="stylesheet" type="text/css">
+  <link href="../../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../../_css/style.css" rel="stylesheet" type="text/css">
+  <link href="../../_css/custom.css" rel="stylesheet" type="text/css">
  </head>
  <body>
   <header>
@@ -16,10 +16,9 @@
      <div class="col-md-12">
       <nav aria-label="breadcrumb">
        <ol class="breadcrumb">
-         <li class="breadcrumb-item"><a href="../../../index.html">C:\Users\Frida\dbwebb-kurser\mvc\me\orm</a></li>
-         <li class="breadcrumb-item"><a href="../../index.html">src</a></li>
-         <li class="breadcrumb-item"><a href="../index.html">Controller</a></li>
-         <li class="breadcrumb-item"><a href="index.html">Yatzy</a></li>
+         <li class="breadcrumb-item"><a href="../../index.html">C:\Users\Frida\dbwebb-kurser\mvc\me\orm</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">src</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Repository</a></li>
          <li class="breadcrumb-item active">(Dashboard)</li>
 
        </ol>
@@ -60,6 +59,8 @@
         </tr>
        </thead>
        <tbody>
+       <tr><td><a href="BookRepository.php.html#9">App\Repository\BookRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="YatzyHighScoreRepository.php.html#9">App\Repository\YatzyHighScoreRepository</a></td><td class="text-right">0%</td></tr>
 
        </tbody>
       </table>
@@ -113,6 +114,10 @@
         </tr>
        </thead>
        <tbody>
+       <tr><td><a href="BookRepository.php.html#11"><abbr title="App\Repository\BookRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="BookRepository.php.html#19"><abbr title="App\Repository\BookRepository::findAll">findAll</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="YatzyHighScoreRepository.php.html#11"><abbr title="App\Repository\YatzyHighScoreRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="YatzyHighScoreRepository.php.html#19"><abbr title="App\Repository\YatzyHighScoreRepository::findAll">findAll</abbr></a></td><td class="text-right">0%</td></tr>
 
        </tbody>
       </table>
@@ -142,9 +147,9 @@
     </p>
    </footer>
   </div>
-  <script src="../../../_js/jquery.min.js" type="text/javascript"></script>
-  <script src="../../../_js/d3.min.js" type="text/javascript"></script>
-  <script src="../../../_js/nv.d3.min.js" type="text/javascript"></script>
+  <script src="../../_js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../_js/d3.min.js" type="text/javascript"></script>
+  <script src="../../_js/nv.d3.min.js" type="text/javascript"></script>
   <script type="text/javascript">
 $(document).ready(function() {
   nv.addGraph(function() {
@@ -157,7 +162,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#classCoverageDistribution svg')
-      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,1,3], "Class Coverage"))
+      .datum(getCoverageDistributionData([2,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -175,7 +180,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#methodCoverageDistribution svg')
-      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,1,26], "Method Coverage"))
+      .datum(getCoverageDistributionData([4,0,0,0,0,0,0,0,0,0,0,0], "Method Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -225,7 +230,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Cyclomatic Complexity');
 
     d3.select('#classComplexity svg')
-      .datum(getComplexityData([[100,6,"<a href=\"DiceHand.php.html#9\">App\\Controller\\Yatzy\\DiceHand<\/a>"],[100,0,"<a href=\"GameDice.php.html#11\">App\\Controller\\Yatzy\\GameDice<\/a>"],[98.9010989010989,38,"<a href=\"GameYatzy.php.html#7\">App\\Controller\\Yatzy\\GameYatzy<\/a>"],[100,3,"<a href=\"DiceTrait.php.html#11\">App\\Controller\\Yatzy\\DiceTrait<\/a>"]], 'Class Complexity'))
+      .datum(getComplexityData([[0,2,"<a href=\"BookRepository.php.html#9\">App\\Repository\\BookRepository<\/a>"],[0,2,"<a href=\"YatzyHighScoreRepository.php.html#9\">App\\Repository\\YatzyHighScoreRepository<\/a>"]], 'Class Complexity'))
       .transition()
       .duration(500)
       .call(chart);
@@ -249,7 +254,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Method Complexity');
 
     d3.select('#methodComplexity svg')
-      .datum(getComplexityData([[100,2,"<a href=\"DiceHand.php.html#14\">App\\Controller\\Yatzy\\DiceHand::__construct<\/a>"],[100,2,"<a href=\"DiceHand.php.html#21\">App\\Controller\\Yatzy\\DiceHand::roll<\/a>"],[100,2,"<a href=\"DiceHand.php.html#32\">App\\Controller\\Yatzy\\DiceHand::getLastRoll<\/a>"],[100,1,"<a href=\"GameYatzy.php.html#16\">App\\Controller\\Yatzy\\GameYatzy::__construct<\/a>"],[100,1,"<a href=\"GameYatzy.php.html#35\">App\\Controller\\Yatzy\\GameYatzy::startGame<\/a>"],[100,1,"<a href=\"GameYatzy.php.html#47\">App\\Controller\\Yatzy\\GameYatzy::setThisRound<\/a>"],[100,1,"<a href=\"GameYatzy.php.html#52\">App\\Controller\\Yatzy\\GameYatzy::getThisRound<\/a>"],[100,3,"<a href=\"GameYatzy.php.html#58\">App\\Controller\\Yatzy\\GameYatzy::rollAgain<\/a>"],[94.11764705882352,7,"<a href=\"GameYatzy.php.html#71\">App\\Controller\\Yatzy\\GameYatzy::updateScoreBoard<\/a>"],[100,2,"<a href=\"GameYatzy.php.html#99\">App\\Controller\\Yatzy\\GameYatzy::finalScore<\/a>"],[100,2,"<a href=\"GameYatzy.php.html#114\">App\\Controller\\Yatzy\\GameYatzy::checkYatzy<\/a>"],[100,1,"<a href=\"GameYatzy.php.html#127\">App\\Controller\\Yatzy\\GameYatzy::resetRoll<\/a>"],[100,3,"<a href=\"GameYatzy.php.html#135\">App\\Controller\\Yatzy\\GameYatzy::checkScoreBoard<\/a>"],[100,1,"<a href=\"GameYatzy.php.html#146\">App\\Controller\\Yatzy\\GameYatzy::getScoreBoard<\/a>"],[100,2,"<a href=\"GameYatzy.php.html#151\">App\\Controller\\Yatzy\\GameYatzy::setScoreBoard<\/a>"],[100,1,"<a href=\"GameYatzy.php.html#162\">App\\Controller\\Yatzy\\GameYatzy::getScore<\/a>"],[100,4,"<a href=\"GameYatzy.php.html#168\">App\\Controller\\Yatzy\\GameYatzy::setScore<\/a>"],[100,2,"<a href=\"GameYatzy.php.html#182\">App\\Controller\\Yatzy\\GameYatzy::setBonus<\/a>"],[100,1,"<a href=\"GameYatzy.php.html#189\">App\\Controller\\Yatzy\\GameYatzy::getScoreExtra<\/a>"],[100,1,"<a href=\"GameYatzy.php.html#194\">App\\Controller\\Yatzy\\GameYatzy::setScoreExtraSumma<\/a>"],[100,1,"<a href=\"GameYatzy.php.html#201\">App\\Controller\\Yatzy\\GameYatzy::setScoreExtraYatzy<\/a>"],[100,1,"<a href=\"GameYatzy.php.html#208\">App\\Controller\\Yatzy\\GameYatzy::resetThisRound<\/a>"],[100,1,"<a href=\"GameYatzy.php.html#216\">App\\Controller\\Yatzy\\GameYatzy::resetGame<\/a>"],[100,1,"<a href=\"GameYatzy.php.html#238\">App\\Controller\\Yatzy\\GameYatzy::mergeDefaultData<\/a>"],[100,1,"<a href=\"DiceTrait.php.html#16\">App\\Controller\\Yatzy\\DiceTrait::__construct<\/a>"],[100,1,"<a href=\"DiceTrait.php.html#21\">App\\Controller\\Yatzy\\DiceTrait::roll<\/a>"],[100,1,"<a href=\"DiceTrait.php.html#28\">App\\Controller\\Yatzy\\DiceTrait::getLastRoll<\/a>"]], 'Method Complexity'))
+      .datum(getComplexityData([[0,1,"<a href=\"BookRepository.php.html#11\">App\\Repository\\BookRepository::__construct<\/a>"],[0,1,"<a href=\"BookRepository.php.html#19\">App\\Repository\\BookRepository::findAll<\/a>"],[0,1,"<a href=\"YatzyHighScoreRepository.php.html#11\">App\\Repository\\YatzyHighScoreRepository::__construct<\/a>"],[0,1,"<a href=\"YatzyHighScoreRepository.php.html#19\">App\\Repository\\YatzyHighScoreRepository::findAll<\/a>"]], 'Method Complexity'))
       .transition()
       .duration(500)
       .call(chart);

@@ -1,0 +1,49 @@
+{% include 'header.twig' %}
+
+
+<div class="container">
+    <div class="left">
+        <h1> {{ title }} </h1>
+
+        <p> {{ message }} </p>
+
+        <h3>21</h3>
+        <table>
+            <tr>
+                <th>Spelare </th>
+                <th>Score </th>
+            </tr>
+
+            {# {% for value in books %}
+                <tr>
+                    <td> {{ value.id }} </td>
+                    <td> {{value.title}} </td>
+                    <td> {{value.author}} </td>
+                    <td> {{value.isbn}} </td>
+                    <td> <img src="../public/img/{{value.image }}.jpg" width="30px"> </td>
+                    <td> 
+                        <a href="{{ path('book_remove', {'id': value.id} ) }}">Ta bort</a>                  
+                    </td>
+                </tr>
+            {% endfor %} #}
+        </table>
+    </div>
+    <div class="right">
+        <h3>Yatzy</h3>
+        {{ dump(yatzy)}}
+        <table>
+        <tr>
+                <th>Spelare </th>
+                <th>Score </th>
+        </tr>
+
+        {% for value in yatzy %}
+            <tr>
+                <td> {{ value.player }} </td>
+                <td> {{value.score}} </td>
+            </tr>
+        {% endfor %}
+        </table>
+    </div>
+</div>
+{% include 'footer.twig' %}

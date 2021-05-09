@@ -1,4 +1,4 @@
-ERROR: Ruleset C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\.phpcs.xml is not valid
+ERROR: Ruleset C:\Users\Frida\dbwebb-kurser\mvc\me\orm\.phpcs.xml is not valid
 - On line 21, column 6: XML declaration allowed only at the start of the document
 
 

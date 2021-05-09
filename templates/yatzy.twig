@@ -20,7 +20,12 @@
                 <input type="submit" value="Kasta om markerade">
             {% elseif data.gameover  == 1 %} 
                 <p> Omgången är över. Resultatet är {{ data.scoreextra["summa"] }} </p>
-                <input type="submit" formaction="{{ path("yatzy_reset") }}" value="Nytt spel">
+                <label for="name">Ditt namn</label>
+                <input class="book-form" type="text" name="name"><br>
+                <input type="hidden" name="game" value="yatzy">
+                <input type="hidden" name="score" value="{{data.scoreextra["summa"]}}">
+                <input type="submit" formaction="{{ path("highscore_save") }}" value="Spara till HighScore-listan">
+                <input type="submit" formaction="{{ path("yatzy_reset") }}" value="Nytt spel, utan att spara">
             <br>
             {% elseif data.yatzy %}
                 <h1> YATZY </h1>

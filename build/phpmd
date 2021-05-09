@@ -1,4 +1,40 @@
-C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Controller\Yatzy\GameYatzy.php:7	The class GameYatzy has 11 public methods. Consider refactoring GameYatzy to keep number of public methods under 10.
-C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Kernel.php:14	Avoid assigning values to variables in if clauses and the like (line '22', column '27').
-C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\src\Kernel.php:27	Avoid assigning values to variables in if clauses and the like (line '34', column '27').
-C:\Users\Frida\dbwebb-kurser\mvc\me\framework\app\test\Game\YatzyTest.php:15	The class YatzyTest has 19 public methods. Consider refactoring YatzyTest to keep number of public methods under 10.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210508170807.php:20	Avoid using short method names like Version20210508170807::up(). The configured minimum method name length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210508170807.php:20	Avoid using short method names like Version20210508170807::up(). The configured minimum method name length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210508170807.php:20	Avoid unused parameters such as '$schema'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210508170807.php:26	Avoid unused parameters such as '$schema'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509102515.php:20	Avoid using short method names like Version20210509102515::up(). The configured minimum method name length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509102515.php:20	Avoid using short method names like Version20210509102515::up(). The configured minimum method name length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509102515.php:20	Avoid unused parameters such as '$schema'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509102515.php:26	Avoid unused parameters such as '$schema'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509103812.php:20	Avoid using short method names like Version20210509103812::up(). The configured minimum method name length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509103812.php:20	Avoid using short method names like Version20210509103812::up(). The configured minimum method name length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509103812.php:20	Avoid unused parameters such as '$schema'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509103812.php:26	Avoid unused parameters such as '$schema'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509125614.php:20	Avoid using short method names like Version20210509125614::up(). The configured minimum method name length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509125614.php:20	Avoid using short method names like Version20210509125614::up(). The configured minimum method name length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509125614.php:20	Avoid unused parameters such as '$schema'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509125614.php:27	Avoid unused parameters such as '$schema'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509131452.php:20	Avoid using short method names like Version20210509131452::up(). The configured minimum method name length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509131452.php:20	Avoid using short method names like Version20210509131452::up(). The configured minimum method name length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509131452.php:20	Avoid unused parameters such as '$schema'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509131452.php:26	Avoid unused parameters such as '$schema'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509131705.php:20	Avoid using short method names like Version20210509131705::up(). The configured minimum method name length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509131705.php:20	Avoid using short method names like Version20210509131705::up(). The configured minimum method name length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509131705.php:20	Avoid unused parameters such as '$schema'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509131705.php:26	Avoid unused parameters such as '$schema'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509132448.php:20	Avoid using short method names like Version20210509132448::up(). The configured minimum method name length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509132448.php:20	Avoid using short method names like Version20210509132448::up(). The configured minimum method name length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509132448.php:20	Avoid unused parameters such as '$schema'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\migrations\Version20210509132448.php:26	Avoid unused parameters such as '$schema'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\BookController.php:17	Avoid unused local variables such as '$entityManager'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\BookController.php:26	Avoid using undefined variables such as '$message' which will lead to PHP notices.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\BookController.php:26	Avoid unused local variables such as '$message'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\BookController.php:46	Avoid unused local variables such as '$books'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\BookController.php:51	Avoid variables with short names like $id. Configured minimum length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\BookController.php:51	Avoid unused parameters such as '$request'.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\Yatzy\GameYatzy.php:7	The class GameYatzy has 11 public methods. Consider refactoring GameYatzy to keep number of public methods under 10.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Entity\Book.php:20	Avoid variables with short names like $id. Configured minimum length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Entity\YatzyHighScore.php:20	Avoid variables with short names like $id. Configured minimum length is 3.
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Kernel.php:14	Avoid assigning values to variables in if clauses and the like (line '22', column '27').
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Kernel.php:27	Avoid assigning values to variables in if clauses and the like (line '34', column '27').
+C:\Users\Frida\dbwebb-kurser\mvc\me\orm\test\Game\YatzyTest.php:15	The class YatzyTest has 19 public methods. Consider refactoring YatzyTest to keep number of public methods under 10.

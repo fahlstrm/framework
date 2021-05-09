@@ -51,14 +51,18 @@ yatzy_save:
     controller: App\Controller\YatzyController::save
     methods: POST
 
-
 highscore:
-    path: highscore
+    path: /highscore
+    controller: App\Controller\HighScoreController
+
+
+highscore_save:
+    path: /highscore/save
+    methods: POST
     controller: App\Controller\HighScoreController::save
 
 
 
-    
 session:
     path: /session
     controller: App\Controller\SessionController
