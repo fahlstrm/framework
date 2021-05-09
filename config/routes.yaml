@@ -52,6 +52,13 @@ yatzy_save:
     methods: POST
 
 
+highscore:
+    path: highscore
+    controller: App\Controller\HighScoreController::save
+
+
+
+    
 session:
     path: /session
     controller: App\Controller\SessionController
@@ -60,10 +67,15 @@ session_destroy:
     path: /session
     controller: App\Controller\SessionController::destory
 
-books:
-    path: /books
+book:
+    path: /book
     controller: App\Controller\BookController
   
-books_create:
-    path: /books/create
+book_create:
+    path: /book/create
     controller: App\Controller\BookController::createBook
+
+book_remove:
+    path: /book/remove/{id}
+    methods: GET
+    controller: App\Controller\BookController::removeBook

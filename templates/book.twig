@@ -1,0 +1,54 @@
+{% include 'header.twig' %}
+
+
+<div class="container">
+    <div class="left">
+        <h1> {{ title }} </h1>
+
+        <p> {{ message }} </p>
+
+        <table>
+        <tr>
+            <th>ID </th>
+            <th>Titel </th>
+            <th>Författare </th>
+            <th>ISBN </th>
+            <th>Bild </th>
+            <th>Ta bort </th>
+        </tr>
+
+        {% for value in books %}
+            <tr>
+                <td> {{ value.id }} </td>
+                <td> {{value.title}} </td>
+                <td> {{value.author}} </td>
+                <td> {{value.isbn}} </td>
+                <td> <img src="../public/img/{{value.image }}.jpg" width="30px"> </td>
+                <td> 
+                    <a href="{{ path('book_remove', {'id': value.id} ) }}">Ta bort</a>                  
+                </td>
+            </tr>
+        {% endfor %}
+        </table>
+    </div>
+    <div class="right">
+        <br>
+        <h3> Lägg till bok: </h3>
+            <form action="{{ path("book_create") }}" method="post">
+                <label for="title">Titel</label>
+                <input class="book-form" type="text" name="title" required><br>
+
+                <label for="isbn">ISBN</label>
+                <input class="book-form" type="string" name="isbn" required><br>
+
+                <label for="author">Författarens namn</label>
+                <input class="book-form" type="text" name="author" required><br>
+
+                <label for="image">Bildlänk</label>
+                <input class="book-form" type="text" name="image"><br>
+
+                <button type="submit">Lägg till</button>
+            </form>
+    </div>
+</div>
+{% include 'footer.twig' %}

@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace App\Entity;
 
-use App\Repository\ProductRepository;
+use App\Repository\BookRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=ProductRepository::class)
+ * @ORM\Entity(repositoryClass=BookRepository::class)
  */
 class Book
 {
@@ -25,7 +25,7 @@ class Book
     protected $title;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=15)
      */
     protected $isbn;
 
@@ -33,6 +33,12 @@ class Book
      * @ORM\Column(type="string", length=50)
      */
     protected $author;
+
+    /**
+     * @ORM\Column(type="string", length=250)
+     */
+    protected $image;
+
 
     public function getId(): ?int
     {
@@ -44,7 +50,7 @@ class Book
         return $this->title;
     }
 
-    public function getIsbn(): ?int
+    public function getIsbn(): ?string
     {
         return $this->isbn;
     }
@@ -54,12 +60,17 @@ class Book
         return $this->author;
     }
 
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
     public function setTitle($title)
     {
         $this->title = $title;
     }
 
-    public function setIbsn($isbn)
+    public function setIsbn($isbn)
     {
         $this->isbn = $isbn;
     }
@@ -67,6 +78,11 @@ class Book
     public function setAuthor($author)
     {
         $this->author = $author;
+    }
+
+    public function setImage($image)
+    {
+        $this->image = $image;
     }
 
 }
