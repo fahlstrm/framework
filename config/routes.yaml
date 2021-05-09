@@ -59,3 +59,11 @@ session:
 session_destroy:
     path: /session
     controller: App\Controller\SessionController::destory
+
+books:
+    path: /books
+    controller: App\Controller\BookController
+  
+books_create:
+    path: /books/create
+    controller: App\Controller\BookController::createBook
