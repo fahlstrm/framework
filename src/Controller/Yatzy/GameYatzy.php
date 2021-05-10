@@ -16,12 +16,12 @@ class GameYatzy
     public function __construct(DiceInterface $diceHand)
     {
         $this->scoreBoard = [
-            1 => 3,
-            2 => 6,
-            3 => 9,
+            1 => null,
+            2 => null,
+            3 => null,
             4 => null,
-            5 => 20,
-            6 => 18
+            5 => null,
+            6 => null
         ];
         $this->scoreExtra = [
             "yatzy" => null,
