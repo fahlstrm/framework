@@ -14,7 +14,7 @@ class BookController extends AbstractController
 
     public function __invoke(): Response
     {
-        $entityManager = $this->getDoctrine()->getManager();
+        // $entityManager = $this->getDoctrine()->getManager();
         // $bookRepository = $entityManager->getRepository(Book::class);
         $bookRepository = $this->getDoctrine()->getRepository(Book::class);
 
@@ -23,7 +23,7 @@ class BookController extends AbstractController
         return $this->render('book.twig', [
             'title' => 'Tillgängliga böcker',
             'nav' => Functions::$nav,
-            'message' => $message ?? "Nedan böcker finns tillgängliga",
+            'message' => "Nedan böcker finns tillgängliga",
             'books' => $books
         ]);
     }
@@ -42,13 +42,10 @@ class BookController extends AbstractController
         $entityManager->persist($book);
         $entityManager->flush();
 
-        $bookRepository = $this->getDoctrine()->getRepository(Book::class);
-        $books = $bookRepository->findAll();
-
         return $this->redirectToRoute('book');
     }
 
-    public function removeBook(Request $request, $id): Response
+    public function removeBook($id): Response
     {
         $book = $this->getDoctrine()
             ->getRepository(Book::class)

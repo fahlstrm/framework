@@ -11,30 +11,23 @@
         <table>
             <tr>
                 <th>Spelare </th>
-                <th>Score </th>
+                <th>Strikes i rad </th>
             </tr>
 
-            {# {% for value in books %}
+            {% for strike in twentyone %}
                 <tr>
-                    <td> {{ value.id }} </td>
-                    <td> {{value.title}} </td>
-                    <td> {{value.author}} </td>
-                    <td> {{value.isbn}} </td>
-                    <td> <img src="../public/img/{{value.image }}.jpg" width="30px"> </td>
-                    <td> 
-                        <a href="{{ path('book_remove', {'id': value.id} ) }}">Ta bort</a>                  
-                    </td>
+                    <td> {{ strike.player }} </td>
+                    <td> {{strike.score}} </td>
                 </tr>
-            {% endfor %} #}
+            {% endfor %}
         </table>
     </div>
     <div class="right">
         <h3>Yatzy</h3>
-        {{ dump(yatzy)}}
         <table>
         <tr>
                 <th>Spelare </th>
-                <th>Score </th>
+                <th>Summa </th>
         </tr>
 
         {% for value in yatzy %}

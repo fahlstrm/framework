@@ -197,9 +197,9 @@ class TwentyOneGameTest extends TestCase
         $data = [];
         $this->assertIsArray($this->game->mergeData($data));
         $this->assertIsArray($this->game->mergeData($data));
-        $this->assertCount(2, $this->game->mergeData($data));
+        $this->assertCount(3, $this->game->mergeData($data));
 
         $data = ["computersum" => 2, "playersum" => 1];
-        $this->assertCount(4, $this->game->mergeData($data));
+        $this->assertCount(5, $this->game->mergeData($data));
     }
 }

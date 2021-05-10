@@ -24,7 +24,7 @@ class HighScoreRepository extends ServiceEntityRepository
             'SELECT h
             FROM App\Entity\Highscore h
             WHERE h.game = :game
-            ORDER BY h.score ASC'
+            ORDER BY h.score DESC'
         )->setParameter('game', $game);
 
         // returns an array of Highscore objects

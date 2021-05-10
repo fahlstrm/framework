@@ -1,19 +1,11 @@
 PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
 
-............F...........................                          40 / 40 (100%)
+........................................                          40 / 40 (100%)
 
-Time: 00:00.611, Memory: 22.00 MB
+Time: 00:00.628, Memory: 22.00 MB
 
-There was 1 failure:
+OK (40 tests, 54 assertions)
 
-1) App\Controller\Test\TwentyOneGameTest::testMergeData
-Failed asserting that actual size 3 matches expected size 2.
+Generating code coverage report in Clover XML format ... done [00:00.198]
 
-C:\Users\Frida\dbwebb-kurser\mvc\me\orm\test\Game\TwentyOneGameTest.php:200
-
-FAILURES!
-Tests: 40, Assertions: 53, Failures: 1.
-
-Generating code coverage report in Clover XML format ... done [00:00.189]
-
-Generating code coverage report in HTML format ... done [00:00.434]
+Generating code coverage report in HTML format ... done [00:00.503]

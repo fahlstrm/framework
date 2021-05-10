@@ -16,12 +16,12 @@ class GameYatzy
     public function __construct(DiceInterface $diceHand)
     {
         $this->scoreBoard = [
-            1 => null,
-            2 => null,
-            3 => null,
+            1 => 3,
+            2 => 6,
+            3 => 9,
             4 => null,
-            5 => null,
-            6 => null
+            5 => 20,
+            6 => 18
         ];
         $this->scoreExtra = [
             "yatzy" => null,
@@ -99,7 +99,6 @@ class GameYatzy
     public function finalScore(): bool
     {
         if ($this->checkScoreBoard()) {
-            $this->setBonus();
             $this->setScore();
             return true;
         }
@@ -170,6 +169,7 @@ class GameYatzy
         foreach ($this->scoreBoard as $value) {
             $this->scoreExtra["summa"] = $this->scoreExtra["summa"] + $value;
         }
+        $this->setBonus();
         if (isset($this->scoreExtra["bonus"])) {
             $this->scoreExtra["summa"] += $this->scoreExtra["bonus"];
         }
@@ -182,6 +182,8 @@ class GameYatzy
     public function setBonus(): int
     {
         $this->scoreExtra["bonus"] = $this->scoreExtra["summa"] >= 63 ? 50 : 0;
+        var_dump($this->scoreExtra["bonus"]);
+
         return $this->scoreExtra["bonus"];
     }
 

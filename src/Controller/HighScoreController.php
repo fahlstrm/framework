@@ -7,13 +7,13 @@ use App\Entity\HighScore;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
-
+use App\Controller\Repository\HighScoreRepository;
 
 class HighScoreController extends AbstractController
 {
     public function __invoke(): Response
     {
-        $entityManager = $this->getDoctrine()->getManager();
+        // $entityManager = $this->getDoctrine()->getManager();
         $highScoreRepository = $this->getDoctrine()->getRepository(HighScore::class);
 
         $yatzy = $highScoreRepository->findAllGame("yatzy");

@@ -44,7 +44,11 @@
         <p> Datorn: {{ data.computerScore }} </p>
         
         {% if data.gameover is defined %} 
-            {% if (data.computerScore <= 0 or null) and data.playerScore >= 1 %}
+            {% if data.computerScore > 0 and data.playerScore < data.computerScore %}
+                <form action="{{ path("twentyone_reset")}}" method="post">
+                    <button type="submit" name="reset">Nollställ Score</button>
+                </form>
+            {% elseif (data.computerScore <= 1 or null) and data.playerScore >= 1 %}
                 <form action="{{ path("highscore_save") }}" method="post">
                     <label for="name">Ditt namn</label>
                     <input class="book-form" type="text" name="name"><br>
@@ -53,9 +57,9 @@
                     <button type="submit" name="reset">Spara till HighScore-listan</button>
                 </form>
             {% endif %}
-            <form action="{{ path("twentyone_reset")}}" method="post">
+            {# <form action="{{ path("twentyone_reset")}}" method="post">
                 <button type="submit" name="reset">Nollställ Score</button>
-            </form>
+            </form> #}
         {% endif %}
     </div>
 </div>
