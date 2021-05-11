@@ -6,6 +6,7 @@ use App\Entity\Book;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
+
 class BookRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
@@ -18,15 +19,10 @@ class BookRepository extends ServiceEntityRepository
      */
     public function findAll(): array
     {
-        $entityManager = $this->getEntityManager();
+        $qb = $this->createQueryBuilder('b');
+        $query = $qb->getQuery();
 
-        $query = $entityManager->createQuery(
-            'SELECT b
-            FROM App\Entity\Book b'
-        );
-
-        // returns an array of book objects
-        return $query->getResult();
+        return $query->execute();
     }
 
 }

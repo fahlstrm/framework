@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1620666274">
-  <project timestamp="1620666274">
+<coverage generated="1620673079">
+  <project timestamp="1620673079">
     <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\config\bundles.php">
       <line num="4" type="stmt" count="0"/>
       <metrics loc="15" ncloc="15" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="1" coveredelements="0"/>
@@ -374,7 +374,7 @@
     </file>
     <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\Yatzy\GameYatzy.php">
       <class name="App\Controller\Yatzy\GameYatzy" namespace="global">
-        <metrics complexity="38" methods="21" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="91" coveredstatements="90" elements="112" coveredelements="110"/>
+        <metrics complexity="38" methods="21" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="92" coveredstatements="91" elements="113" coveredelements="111"/>
       </class>
       <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="19"/>
       <line num="18" type="stmt" count="19"/>
@@ -422,73 +422,74 @@
       <line num="101" type="stmt" count="2"/>
       <line num="102" type="stmt" count="2"/>
       <line num="103" type="stmt" count="2"/>
-      <line num="104" type="stmt" count="2"/>
-      <line num="106" type="stmt" count="1"/>
-      <line num="114" type="method" name="checkYatzy" visibility="public" complexity="2" crap="2" count="8"/>
+      <line num="105" type="stmt" count="1"/>
+      <line num="113" type="method" name="checkYatzy" visibility="public" complexity="2" crap="2" count="8"/>
+      <line num="115" type="stmt" count="8"/>
       <line num="116" type="stmt" count="8"/>
       <line num="117" type="stmt" count="8"/>
-      <line num="118" type="stmt" count="8"/>
+      <line num="118" type="stmt" count="2"/>
       <line num="119" type="stmt" count="2"/>
       <line num="120" type="stmt" count="2"/>
-      <line num="121" type="stmt" count="2"/>
-      <line num="123" type="stmt" count="6"/>
-      <line num="127" type="method" name="resetRoll" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="122" type="stmt" count="6"/>
+      <line num="126" type="method" name="resetRoll" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="128" type="stmt" count="3"/>
       <line num="129" type="stmt" count="3"/>
       <line num="130" type="stmt" count="3"/>
-      <line num="131" type="stmt" count="3"/>
-      <line num="135" type="method" name="checkScoreBoard" visibility="public" complexity="3" crap="3" count="8"/>
+      <line num="134" type="method" name="checkScoreBoard" visibility="public" complexity="3" crap="3" count="8"/>
+      <line num="136" type="stmt" count="8"/>
       <line num="137" type="stmt" count="8"/>
-      <line num="138" type="stmt" count="8"/>
-      <line num="139" type="stmt" count="7"/>
-      <line num="142" type="stmt" count="2"/>
-      <line num="146" type="method" name="getScoreBoard" visibility="public" complexity="1" crap="1" count="7"/>
-      <line num="148" type="stmt" count="7"/>
-      <line num="151" type="method" name="setScoreBoard" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="138" type="stmt" count="7"/>
+      <line num="141" type="stmt" count="2"/>
+      <line num="145" type="method" name="getScoreBoard" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="147" type="stmt" count="7"/>
+      <line num="150" type="method" name="setScoreBoard" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="152" type="stmt" count="2"/>
       <line num="153" type="stmt" count="2"/>
       <line num="154" type="stmt" count="2"/>
-      <line num="155" type="stmt" count="2"/>
-      <line num="158" type="stmt" count="2"/>
-      <line num="162" type="method" name="getScore" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="164" type="stmt" count="1"/>
-      <line num="168" type="method" name="setScore" visibility="public" complexity="4" crap="4" count="3"/>
+      <line num="157" type="stmt" count="2"/>
+      <line num="161" type="method" name="getScore" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="163" type="stmt" count="1"/>
+      <line num="167" type="method" name="setScore" visibility="public" complexity="4" crap="4" count="3"/>
+      <line num="169" type="stmt" count="3"/>
       <line num="170" type="stmt" count="3"/>
-      <line num="171" type="stmt" count="3"/>
+      <line num="172" type="stmt" count="3"/>
       <line num="173" type="stmt" count="3"/>
-      <line num="174" type="stmt" count="2"/>
+      <line num="174" type="stmt" count="3"/>
       <line num="176" type="stmt" count="3"/>
       <line num="177" type="stmt" count="1"/>
       <line num="179" type="stmt" count="3"/>
-      <line num="182" type="method" name="setBonus" visibility="public" complexity="2" crap="2" count="3"/>
-      <line num="184" type="stmt" count="3"/>
-      <line num="185" type="stmt" count="3"/>
-      <line num="189" type="method" name="getScoreExtra" visibility="public" complexity="1" crap="1" count="8"/>
-      <line num="191" type="stmt" count="8"/>
-      <line num="194" type="method" name="setScoreExtraSumma" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="196" type="stmt" count="1"/>
-      <line num="197" type="stmt" count="1"/>
-      <line num="201" type="method" name="setScoreExtraYatzy" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="203" type="stmt" count="1"/>
-      <line num="204" type="stmt" count="1"/>
-      <line num="208" type="method" name="resetThisRound" visibility="public" complexity="1" crap="1" count="4"/>
-      <line num="210" type="stmt" count="4"/>
-      <line num="211" type="stmt" count="4"/>
-      <line num="216" type="method" name="resetGame" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="218" type="stmt" count="1"/>
-      <line num="226" type="stmt" count="1"/>
-      <line num="231" type="stmt" count="1"/>
+      <line num="182" type="method" name="setBonus" visibility="public" complexity="2" crap="2" count="4"/>
+      <line num="184" type="stmt" count="4"/>
+      <line num="185" type="stmt" count="4"/>
+      <line num="187" type="stmt" count="4"/>
+      <line num="191" type="method" name="getScoreExtra" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="193" type="stmt" count="8"/>
+      <line num="196" type="method" name="setScoreExtraSumma" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="198" type="stmt" count="1"/>
+      <line num="199" type="stmt" count="1"/>
+      <line num="203" type="method" name="setScoreExtraYatzy" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="205" type="stmt" count="1"/>
+      <line num="206" type="stmt" count="1"/>
+      <line num="210" type="method" name="resetThisRound" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="212" type="stmt" count="4"/>
+      <line num="213" type="stmt" count="4"/>
+      <line num="218" type="method" name="resetGame" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="220" type="stmt" count="1"/>
+      <line num="228" type="stmt" count="1"/>
       <line num="233" type="stmt" count="1"/>
-      <line num="234" type="stmt" count="1"/>
-      <line num="238" type="method" name="mergeDefaultData" visibility="public" complexity="1" crap="1" count="6"/>
-      <line num="241" type="stmt" count="6"/>
-      <line num="242" type="stmt" count="6"/>
+      <line num="235" type="stmt" count="1"/>
+      <line num="236" type="stmt" count="1"/>
+      <line num="240" type="method" name="mergeDefaultData" visibility="public" complexity="1" crap="1" count="6"/>
       <line num="243" type="stmt" count="6"/>
       <line num="244" type="stmt" count="6"/>
       <line num="245" type="stmt" count="6"/>
       <line num="246" type="stmt" count="6"/>
       <line num="247" type="stmt" count="6"/>
+      <line num="248" type="stmt" count="6"/>
       <line num="249" type="stmt" count="6"/>
       <line num="251" type="stmt" count="6"/>
-      <metrics loc="253" ncloc="248" classes="1" methods="21" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="91" coveredstatements="90" elements="112" coveredelements="110"/>
+      <line num="253" type="stmt" count="6"/>
+      <metrics loc="255" ncloc="250" classes="1" methods="21" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="92" coveredstatements="91" elements="113" coveredelements="111"/>
     </file>
     <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Entity\Book.php">
       <class name="App\Entity\Book" namespace="global">
@@ -597,6 +598,6 @@
       <line num="34" type="stmt" count="0"/>
       <metrics loc="33" ncloc="30" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="9" coveredelements="0"/>
     </file>
-    <metrics files="23" loc="1251" ncloc="1186" classes="18" methods="83" coveredmethods="41" conditionals="0" coveredconditionals="0" statements="379" coveredstatements="196" elements="462" coveredelements="237"/>
+    <metrics files="23" loc="1253" ncloc="1188" classes="18" methods="83" coveredmethods="41" conditionals="0" coveredconditionals="0" statements="380" coveredstatements="197" elements="463" coveredelements="238"/>
   </project>
 </coverage>
