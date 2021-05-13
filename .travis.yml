@@ -10,8 +10,3 @@ before_script:
 
 script:
     - make test
-
-env:
-  - APP_ENV=dev
-  - APP_SECRET=119f5d8cd8e007f1433df09efef9482c
-  - DATABASE_URL="sqlite:///%kernel.project_dir%/var/data.db"
