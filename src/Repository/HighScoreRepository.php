@@ -26,5 +26,4 @@ class HighScoreRepository extends ServiceEntityRepository
 
         return $query->execute();
     }
-
 }
