@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1620894415">
-  <project timestamp="1620894415">
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\config\bundles.php">
+<coverage generated="1620897612">
+  <project timestamp="1620897612">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\config\bundles.php">
       <line num="4" type="stmt" count="0"/>
       <metrics loc="15" ncloc="15" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="1" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\config\preload.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\config\preload.php">
       <line num="3" type="stmt" count="0"/>
       <line num="4" type="stmt" count="0"/>
       <metrics loc="5" ncloc="5" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="2" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\BookController.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\BookController.php">
       <class name="App\Controller\BookController" namespace="global">
         <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="0" elements="26" coveredelements="0"/>
       </class>
@@ -43,13 +43,13 @@
       <line num="61" type="stmt" count="0"/>
       <metrics loc="60" ncloc="58" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="0" elements="26" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\Functions.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\Functions.php">
       <class name="App\Controller\Functions" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
       <metrics loc="29" ncloc="29" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\HighScoreController.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\HighScoreController.php">
       <class name="App\Controller\HighScoreController" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="0" elements="19" coveredelements="0"/>
       </class>
@@ -74,7 +74,7 @@
       <line num="43" type="stmt" count="0"/>
       <metrics loc="45" ncloc="44" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="0" elements="19" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\HomeController.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\HomeController.php">
       <class name="App\Controller\HomeController" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="5" coveredelements="0"/>
       </class>
@@ -85,7 +85,7 @@
       <line num="35" type="stmt" count="0"/>
       <metrics loc="38" ncloc="35" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="5" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\SessionController.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\SessionController.php">
       <class name="App\Controller\SessionController" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
       </class>
@@ -102,7 +102,7 @@
       <line num="29" type="stmt" count="0"/>
       <metrics loc="32" ncloc="32" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\TwentyOneController.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\TwentyOneController.php">
       <class name="App\Controller\TwentyOneController" namespace="global">
         <metrics complexity="8" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="0" elements="44" coveredelements="0"/>
       </class>
@@ -152,7 +152,7 @@
       <line num="87" type="stmt" count="0"/>
       <metrics loc="90" ncloc="90" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="0" elements="44" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\TwentyOne\DiceHandTwentyOne.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\TwentyOne\DiceHandTwentyOne.php">
       <class name="App\Controller\TwentyOne\DiceHandTwentyOne" namespace="global">
         <metrics complexity="7" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="18" coveredelements="16"/>
       </class>
@@ -176,7 +176,7 @@
       <line num="43" type="stmt" count="0"/>
       <metrics loc="45" ncloc="45" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="18" coveredelements="16"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\TwentyOne\DiceTwentyOne.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\TwentyOne\DiceTwentyOne.php">
       <class name="App\Controller\TwentyOne\DiceTwentyOne" namespace="global">
         <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
       </class>
@@ -190,7 +190,7 @@
       <line num="25" type="stmt" count="4"/>
       <metrics loc="27" ncloc="27" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\TwentyOne\GameTwentyOne.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\TwentyOne\GameTwentyOne.php">
       <class name="App\Controller\TwentyOne\GameTwentyOne" namespace="global">
         <metrics complexity="22" methods="11" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="77" coveredstatements="68" elements="88" coveredelements="77"/>
       </class>
@@ -284,7 +284,7 @@
       <line num="161" type="stmt" count="4"/>
       <metrics loc="163" ncloc="162" classes="1" methods="11" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="77" coveredstatements="68" elements="88" coveredelements="77"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\TwentyOne\GraphicalDice.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\TwentyOne\GraphicalDice.php">
       <class name="App\Controller\TwentyOne\GraphicalDice" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
       </class>
@@ -293,7 +293,7 @@
       <line num="14" type="stmt" count="2"/>
       <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\YatzyController.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\YatzyController.php">
       <class name="App\Controller\YatzyController" namespace="global">
         <metrics complexity="4" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="0" elements="29" coveredelements="0"/>
       </class>
@@ -328,7 +328,7 @@
       <line num="62" type="stmt" count="0"/>
       <metrics loc="65" ncloc="65" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="0" elements="29" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\Yatzy\DiceHand.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\Yatzy\DiceHand.php">
       <class name="App\Controller\Yatzy\DiceHand" namespace="global">
         <metrics complexity="6" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="15" coveredelements="15"/>
       </class>
@@ -349,10 +349,10 @@
       <line num="39" type="stmt" count="6"/>
       <metrics loc="41" ncloc="41" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="15" coveredelements="15"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\Yatzy\DiceInterface.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\Yatzy\DiceInterface.php">
       <metrics loc="16" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\Yatzy\DiceTrait.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\Yatzy\DiceTrait.php">
       <class name="App\Controller\Yatzy\DiceTrait" namespace="global">
         <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
       </class>
@@ -366,13 +366,13 @@
       <line num="30" type="stmt" count="7"/>
       <metrics loc="32" ncloc="28" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\Yatzy\GameDice.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\Yatzy\GameDice.php">
       <class name="App\Controller\Yatzy\GameDice" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
       <metrics loc="14" ncloc="11" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Controller\Yatzy\GameYatzy.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\Yatzy\GameYatzy.php">
       <class name="App\Controller\Yatzy\GameYatzy" namespace="global">
         <metrics complexity="38" methods="21" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="92" coveredstatements="91" elements="113" coveredelements="111"/>
       </class>
@@ -491,7 +491,7 @@
       <line num="253" type="stmt" count="6"/>
       <metrics loc="255" ncloc="250" classes="1" methods="21" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="92" coveredstatements="91" elements="113" coveredelements="111"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Entity\Book.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Entity\Book.php">
       <class name="App\Entity\Book" namespace="global">
         <metrics complexity="9" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="22" coveredelements="0"/>
       </class>
@@ -520,7 +520,7 @@
       <line num="88" type="stmt" count="0"/>
       <metrics loc="87" ncloc="67" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="22" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Entity\HighScore.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Entity\HighScore.php">
       <class name="App\Entity\HighScore" namespace="global">
         <metrics complexity="7" methods="7" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="17" coveredelements="0"/>
       </class>
@@ -544,7 +544,7 @@
       <line num="78" type="stmt" count="0"/>
       <metrics loc="77" ncloc="60" classes="1" methods="7" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="17" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Kernel.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Kernel.php">
       <class name="App\Kernel" namespace="global">
         <metrics complexity="6" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="17" coveredelements="0"/>
       </class>
@@ -567,7 +567,7 @@
       <line num="37" type="stmt" count="0"/>
       <metrics loc="38" ncloc="38" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="17" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Repository\BookRepository.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Repository\BookRepository.php">
       <class name="App\Repository\BookRepository" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="7" coveredelements="0"/>
       </class>
@@ -580,7 +580,7 @@
       <line num="24" type="stmt" count="0"/>
       <metrics loc="26" ncloc="23" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="7" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\orm\src\Repository\HighScoreRepository.php">
+    <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Repository\HighScoreRepository.php">
       <class name="App\Repository\HighScoreRepository" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="10" coveredelements="0"/>
       </class>
