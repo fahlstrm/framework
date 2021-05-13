@@ -17,10 +17,10 @@ class Functions
             'name' => 'HighScore',
             'url' => 'highscore'
         ],
-        'session' => [
-            'name' => 'Session',
-            'url' => 'session'
-        ],
+        // 'session' => [
+        //     'name' => 'Session',
+        //     'url' => 'session'
+        // ],
         'book' => [
             'name' => 'Böcker',
             'url' => 'book'

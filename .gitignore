@@ -23,5 +23,5 @@
 ###< phpunit/phpunit ###
 
 .env.local
-.env.student
+.env.prod
 
