@@ -1,29 +1,13 @@
- ------ ----------------------------------------------------------------------- 
- [32m Line [39m [32m src\Controller\HighScoreController.php                                [39m 
- ------ ----------------------------------------------------------------------- 
-[39;49m  19     Call to an undefined method[39;49m[39;49m                                            [39;49m
-[39;49m         [39;49m[39;49mDoctrine\Persistence\ObjectRepository[39;49m[39;49m<App\Entity\HighScore>[39;49m[39;49m::findAllG[39;49m[39;49m  [39;49m
-[39;49m         [39;49mame().                                                                 
-[39;49m  20     Call to an undefined method[39;49m[39;49m                                            [39;49m
-[39;49m         [39;49m[39;49mDoctrine\Persistence\ObjectRepository[39;49m[39;49m<App\Entity\HighScore>[39;49m[39;49m::findAllG[39;49m[39;49m  [39;49m
-[39;49m         [39;49mame().                                                                 
- ------ ----------------------------------------------------------------------- 
+ ------ ----------------------------------------------------------------------------- 
+ [32m Line [39m [32m src\Controller\HighScoreController.php                                      [39m 
+ ------ ----------------------------------------------------------------------------- 
+[39;49m  19     Call to an undefined method[39;49m[39;49m                                                  [39;49m
+[39;49m         [39;49mDoctrine\Persistence\ObjectRepository<App\Entity\HighScore>::findAllGame().  
+[39;49m  20     Call to an undefined method[39;49m[39;49m                                                  [39;49m
+[39;49m         [39;49mDoctrine\Persistence\ObjectRepository<App\Entity\HighScore>::findAllGame().  
+ ------ ----------------------------------------------------------------------------- 
 
- ------ -------------------------------------------------------- 
- [32m Line [39m [32m src\Controller\SessionController.php                   [39m 
- ------ -------------------------------------------------------- 
-[39;49m  25     Access to an undefined property[39;49m[39;49m                         [39;49m
-[39;49m         [39;49mSymfony\Component\HttpFoundation\Request::$getSession.  
- ------ -------------------------------------------------------- 
-
- ------ -------------------------------------------------------------------- 
- [32m Line [39m [32m src\Repository\BookRepository.php                                  [39m 
- ------ -------------------------------------------------------------------- 
-[39;49m  19     Return typehint of method App\Repository\BookRepository::findAll()[39;49m[39;49m  [39;49m
-[39;49m         [39;49mhas invalid type App\Repository\Books.                              
- ------ -------------------------------------------------------------------- 
-
-[37;41m                                                                               [39;49m
-[37;41m [ERROR] Found 4 errors                                                        [39;49m
-[37;41m                                                                               [39;49m
+[37;41m                                                                                                    [39;49m
+[37;41m [ERROR] Found 2 errors                                                                             [39;49m
+[37;41m                                                                                                    [39;49m
 

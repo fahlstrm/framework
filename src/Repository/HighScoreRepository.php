@@ -18,11 +18,11 @@ class HighScoreRepository extends ServiceEntityRepository
      */
     public function findAllGame($game): array
     {
-        $qb = $this->createQueryBuilder('h')
+        $querybuilder = $this->createQueryBuilder('h')
             ->where('h.game = :game')
             ->setParameter('game', $game)
             ->orderBy('h.score', 'DESC');
-        $query = $qb->getQuery();
+        $query = $querybuilder->getQuery();
 
         return $query->execute();
     }

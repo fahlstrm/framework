@@ -20,9 +20,9 @@ class SessionController extends AbstractController
             ]);
     }
 
-    public function destroy(Request $request): Response
+    public function destroy(SessionInterface $session): Response
     {
-        $request->getSession->invalidate();
+        $session->invalidate();
         return $this->render('index.twig', [
             'title' => 'Spel i Symfony',
             'message' => "Välj spel i navbaren",

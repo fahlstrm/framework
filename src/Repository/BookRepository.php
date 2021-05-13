@@ -15,12 +15,12 @@ class BookRepository extends ServiceEntityRepository
     }
 
     /**
-     * @return Books[]
+     * @return Book[]
      */
     public function findAll(): array
     {
-        $qb = $this->createQueryBuilder('b');
-        $query = $qb->getQuery();
+        $querybuilder = $this->createQueryBuilder('b');
+        $query = $querybuilder->getQuery();
 
         return $query->execute();
     }
