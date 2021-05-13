@@ -18,6 +18,6 @@ build:
                     file: "build/coverage.clover"
                     format: "php-clover"
 
-    enviroment: 
+    environment: 
         variables:
             DATABASE_PASSWORD: "null"
