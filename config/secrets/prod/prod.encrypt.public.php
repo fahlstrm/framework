@@ -1,0 +1,3 @@
+<?php // prod.encrypt.public on Thu, 13 May 2021 12:56:08 +0200
+
+return "f\xA29\xBF\x8Bo\xA5\x2C\xF1b\x14Z\xA6\xFCa\xE61\xF7\xAFb\x05cNR\x9Aj\x00\xB2\xC2V\xD8K";

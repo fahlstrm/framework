@@ -4,9 +4,11 @@
 /.env.local.php
 /.env.*.local
 /config/secrets/prod/prod.decrypt.private.php
+/config/secrets/dev/dev.decrypt.private.php
 /public/bundles/
 /var/
 /vendor/
+
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
@@ -20,4 +22,6 @@
 .phpunit.result.cache
 ###< phpunit/phpunit ###
 
-.env
+.env.local
+.env.student
+
