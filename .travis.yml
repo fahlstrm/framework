@@ -12,6 +12,5 @@ script:
     - make test
 
 env:
-  - DB=postgres
-  - SH=bash
-  - PACKAGE_VERSION="1.0.*"
+  - APP_ENV=dev
+  - APP_SECRET=119f5d8cd8e007f1433df09efef9482c
