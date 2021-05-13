@@ -3,6 +3,8 @@ FRAMEWORK
 En samling kod för att spela 21 och Yatzy.
 Tester och makefile inkluderade.
 
+Automatiserad testning med hjälp av Travis CI
+
 KOD
 --------------
 Skrivet i php i ramverket Symfony.
