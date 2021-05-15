@@ -2,44 +2,52 @@
 
 declare(strict_types=1);
 
-namespace App\Controller;
-
+use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
-use Symfony\Component\HttpFoundation\Session\Session;
-use Symfony\Component\HttpFoundation\Session\Storage\MockArraySessionStorage;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Request;
-use App\Controller\YatzyController;
 
-class ControllerYatzyTest extends TestCase
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
+use Symfony\Component\HttpFoundation\Session\Storage\MockArraySessionStorage;
+use Symfony\Component\HttpFoundation\Session\Session;
+
+use App\Controller\Yatzy\GameDice;
+use App\Controller\Yatzy\DiceHand;
+use App\Controller\Yatzy\GameYatzy;
+
+class ControllerYatzyTest extends WebTestCase extends TestCase
 {
+    private object $callable;
+    protected $session;
+
     protected function setUp(): void
     {
         $this->session = new Session(new MockArraySessionStorage());
-        $this->request = new Request();
+        $this->callable = new GameYatzy(new DiceHand(5, new GameDice()));
+        $this->session->set("yatzyObject", $this->callable);
     }
 
-    public function testCreateTheControllerClass()
+    public function testStart(): void 
     {
-        $controller = new YatzyController();
-        $this->assertInstanceOf("\App\Controller\YatzyController", $controller);
+
+        $client = static::createClient();
+        $client->request('GET', '/yatzy');
+    
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
     }
 
-    // public function testYatzyControllerReturnsResponse()
+    public function testRoll(): void 
+    {
+        $client = static::createClient();
+        $client->request('POST', '/yatzy/roll');
+        echo($this->session);
+        $this->assertResponseIsSuccessful();
+    }
+
+    // public function testSave():void 
     // {
-    //     $controller = new YatzyController();
-        // $exp = "\Symfony\Component\HttpFoundation\Response";
-    //     $res = $controller->start($this->session);
-    //     $this->assertInstanceOf($exp, $res);
-
-    //     $res = $controller->roll($this->request);
-    //     $this->assertInstanceOf($exp, $res);
-
-    //     $res = $controller->save($this->request);
-    //     $this->assertInstanceOf($exp, $res);
-
-    //     $res = $controller->reset();
-    //     $this->assertInstanceOf($exp, $res);
+    //     $client = static::createClient();
+    //     $client->request('POST', '/yatzy/reset');
+    
+    //     $this->assertEquals(200, $client->getResponse()->getStatusCode());
     // }
 }

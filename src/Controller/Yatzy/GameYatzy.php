@@ -182,7 +182,6 @@ class GameYatzy
     public function setBonus(): int
     {
         $this->scoreExtra["bonus"] = $this->scoreExtra["summa"] >= 63 ? 50 : 0;
-        var_dump($this->scoreExtra["bonus"]);
 
         return $this->scoreExtra["bonus"];
     }

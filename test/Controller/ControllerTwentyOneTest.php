@@ -15,10 +15,13 @@ use App\Controller\TwentyOneController;
 
 class ControllerTwentyOneTest extends TestCase
 {
-    protected function setUp(): void
-    {
-        $this->session = new Session(new MockArraySessionStorage());
-    }
+    // protected function setUp(): void
+    // {
+    //     $this->session = new Session(new MockArraySessionStorage());
+    //     $callable = new GameYatzy(new DiceHand(5, new GameDice()));
+
+    //     $this->session->set("yatzyObject", $callable);
+    // }
 
     public function testCreateTheControllerClass()
     {
