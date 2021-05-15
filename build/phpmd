@@ -1,7 +1,0 @@
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\BookController.php:48	Avoid variables with short names like $id. Configured minimum length is 3.
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\Yatzy\GameYatzy.php:7	The class GameYatzy has 11 public methods. Consider refactoring GameYatzy to keep number of public methods under 10.
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Entity\Book.php:20	Avoid variables with short names like $id. Configured minimum length is 3.
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Entity\HighScore.php:20	Avoid variables with short names like $id. Configured minimum length is 3.
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Kernel.php:14	Avoid assigning values to variables in if clauses and the like (line '22', column '27').
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Kernel.php:27	Avoid assigning values to variables in if clauses and the like (line '34', column '27').
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\test\Game\YatzyTest.php:15	The class YatzyTest has 19 public methods. Consider refactoring YatzyTest to keep number of public methods under 10.
