@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1621116021">
-  <project timestamp="1621116021">
+<coverage generated="1621117037">
+  <project timestamp="1621117037">
     <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\config\bundles.php">
       <line num="4" type="stmt" count="2"/>
       <metrics loc="15" ncloc="15" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="1" coveredelements="1"/>
@@ -49,11 +49,11 @@
     </file>
     <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\BookController.php">
       <class name="App\Controller\BookController" namespace="global">
-        <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="2" elements="26" coveredelements="2"/>
+        <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="0" elements="26" coveredelements="0"/>
       </class>
-      <line num="15" type="method" name="__invoke" visibility="public" complexity="1" crap="1.36" count="1"/>
-      <line num="19" type="stmt" count="1"/>
-      <line num="21" type="stmt" count="1"/>
+      <line num="15" type="method" name="__invoke" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
       <line num="23" type="stmt" count="0"/>
       <line num="24" type="stmt" count="0"/>
       <line num="25" type="stmt" count="0"/>
@@ -77,8 +77,8 @@
       <line num="55" type="stmt" count="0"/>
       <line num="56" type="stmt" count="0"/>
       <line num="58" type="stmt" count="0"/>
-      <line num="61" type="stmt" count="1"/>
-      <metrics loc="60" ncloc="58" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="2" elements="26" coveredelements="2"/>
+      <line num="61" type="stmt" count="0"/>
+      <metrics loc="60" ncloc="58" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="0" elements="26" coveredelements="0"/>
     </file>
     <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\Functions.php">
       <class name="App\Controller\Functions" namespace="global">
@@ -141,19 +141,19 @@
     </file>
     <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\TwentyOneController.php">
       <class name="App\Controller\TwentyOneController" namespace="global">
-        <metrics complexity="8" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="0" elements="44" coveredelements="0"/>
+        <metrics complexity="8" methods="4" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="10" elements="44" coveredelements="11"/>
       </class>
-      <line num="18" type="method" name="start" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="20" type="stmt" count="0"/>
-      <line num="21" type="stmt" count="0"/>
-      <line num="22" type="stmt" count="0"/>
-      <line num="24" type="stmt" count="0"/>
-      <line num="26" type="stmt" count="0"/>
-      <line num="27" type="stmt" count="0"/>
-      <line num="29" type="stmt" count="0"/>
-      <line num="30" type="stmt" count="0"/>
-      <line num="31" type="stmt" count="0"/>
-      <line num="32" type="stmt" count="0"/>
+      <line num="18" type="method" name="start" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="21" type="stmt" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="27" type="stmt" count="1"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="31" type="stmt" count="1"/>
+      <line num="32" type="stmt" count="1"/>
       <line num="36" type="method" name="play" visibility="public" complexity="1" crap="2" count="0"/>
       <line num="38" type="stmt" count="0"/>
       <line num="39" type="stmt" count="0"/>
@@ -187,7 +187,7 @@
       <line num="85" type="stmt" count="0"/>
       <line num="86" type="stmt" count="0"/>
       <line num="87" type="stmt" count="0"/>
-      <metrics loc="90" ncloc="90" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="0" elements="44" coveredelements="0"/>
+      <metrics loc="90" ncloc="90" classes="1" methods="4" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="10" elements="44" coveredelements="11"/>
     </file>
     <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\TwentyOne\DiceHandTwentyOne.php">
       <class name="App\Controller\TwentyOne\DiceHandTwentyOne" namespace="global">
@@ -231,19 +231,19 @@
       <class name="App\Controller\TwentyOne\GameTwentyOne" namespace="global">
         <metrics complexity="22" methods="11" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="77" coveredstatements="68" elements="88" coveredelements="77"/>
       </class>
-      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="9"/>
-      <line num="17" type="stmt" count="9"/>
-      <line num="18" type="stmt" count="9"/>
-      <line num="19" type="stmt" count="9"/>
-      <line num="21" type="method" name="startGame" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="23" type="stmt" count="1"/>
-      <line num="24" type="stmt" count="1"/>
-      <line num="25" type="stmt" count="1"/>
-      <line num="26" type="stmt" count="1"/>
-      <line num="28" type="stmt" count="1"/>
-      <line num="29" type="stmt" count="1"/>
-      <line num="34" type="stmt" count="1"/>
-      <line num="35" type="stmt" count="1"/>
+      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="10"/>
+      <line num="17" type="stmt" count="10"/>
+      <line num="18" type="stmt" count="10"/>
+      <line num="19" type="stmt" count="10"/>
+      <line num="21" type="method" name="startGame" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="23" type="stmt" count="2"/>
+      <line num="24" type="stmt" count="2"/>
+      <line num="25" type="stmt" count="2"/>
+      <line num="26" type="stmt" count="2"/>
+      <line num="28" type="stmt" count="2"/>
+      <line num="29" type="stmt" count="2"/>
+      <line num="34" type="stmt" count="2"/>
+      <line num="35" type="stmt" count="2"/>
       <line num="38" type="method" name="playGamePlayer" visibility="public" complexity="5" crap="5" count="1"/>
       <line num="40" type="stmt" count="1"/>
       <line num="41" type="stmt" count="1"/>
@@ -300,9 +300,9 @@
       <line num="109" type="stmt" count="1"/>
       <line num="112" type="method" name="getComputerScore" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="114" type="stmt" count="1"/>
-      <line num="118" type="method" name="resetGame" visibility="public" complexity="1" crap="1" count="4"/>
-      <line num="120" type="stmt" count="4"/>
-      <line num="132" type="stmt" count="4"/>
+      <line num="118" type="method" name="resetGame" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="120" type="stmt" count="5"/>
+      <line num="132" type="stmt" count="5"/>
       <line num="135" type="method" name="resetScore" visibility="public" complexity="1" crap="2" count="0"/>
       <line num="137" type="stmt" count="0"/>
       <line num="138" type="stmt" count="0"/>
@@ -313,12 +313,12 @@
       <line num="146" type="stmt" count="3"/>
       <line num="147" type="stmt" count="3"/>
       <line num="148" type="stmt" count="3"/>
-      <line num="151" type="method" name="mergeData" visibility="public" complexity="1" crap="1" count="4"/>
-      <line num="155" type="stmt" count="4"/>
-      <line num="156" type="stmt" count="4"/>
-      <line num="157" type="stmt" count="4"/>
-      <line num="160" type="stmt" count="4"/>
-      <line num="161" type="stmt" count="4"/>
+      <line num="151" type="method" name="mergeData" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="155" type="stmt" count="5"/>
+      <line num="156" type="stmt" count="5"/>
+      <line num="157" type="stmt" count="5"/>
+      <line num="160" type="stmt" count="5"/>
+      <line num="161" type="stmt" count="5"/>
       <metrics loc="163" ncloc="162" classes="1" methods="11" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="77" coveredstatements="68" elements="88" coveredelements="77"/>
     </file>
     <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\TwentyOne\GraphicalDice.php">
@@ -553,7 +553,7 @@
       <line num="83" type="method" name="setImage" visibility="public" complexity="1" crap="2" count="0"/>
       <line num="85" type="stmt" count="0"/>
       <line num="86" type="stmt" count="0"/>
-      <line num="88" type="stmt" count="1"/>
+      <line num="88" type="stmt" count="0"/>
       <metrics loc="87" ncloc="67" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="22" coveredelements="0"/>
     </file>
     <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Entity\HighScore.php">
@@ -605,16 +605,16 @@
     </file>
     <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Repository\BookRepository.php">
       <class name="App\Repository\BookRepository" namespace="global">
-        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="7" coveredelements="0"/>
       </class>
-      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="13" type="stmt" count="1"/>
-      <line num="14" type="stmt" count="1"/>
-      <line num="19" type="method" name="findAll" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="21" type="stmt" count="1"/>
-      <line num="22" type="stmt" count="1"/>
-      <line num="24" type="stmt" count="1"/>
-      <metrics loc="26" ncloc="23" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="13" type="stmt" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <line num="19" type="method" name="findAll" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <metrics loc="26" ncloc="23" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="7" coveredelements="0"/>
     </file>
     <file name="C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Repository\HighScoreRepository.php">
       <class name="App\Repository\HighScoreRepository" namespace="global">
@@ -632,6 +632,6 @@
       <line num="27" type="stmt" count="0"/>
       <metrics loc="29" ncloc="26" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="10" coveredelements="0"/>
     </file>
-    <metrics files="32" loc="1278" ncloc="1203" classes="18" methods="83" coveredmethods="44" conditionals="0" coveredconditionals="0" statements="389" coveredstatements="211" elements="472" coveredelements="255"/>
+    <metrics files="32" loc="1278" ncloc="1203" classes="18" methods="83" coveredmethods="43" conditionals="0" coveredconditionals="0" statements="389" coveredstatements="214" elements="472" coveredelements="257"/>
   </project>
 </coverage>

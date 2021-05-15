@@ -1,35 +1,11 @@
 PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
 
-F..E......................................                        42 / 42 (100%)
+........................................                          40 / 40 (100%)
 
-Time: 00:02.035, Memory: 46.00 MB
+Time: 00:01.229, Memory: 38.00 MB
 
-There was 1 error:
+OK (40 tests, 54 assertions)
 
-1) ControllerYatzyTest::testRoll
-Error: Call to a member function rollAgain() on null
+Generating code coverage report in Clover XML format ... <!-- done [00:00.170]
 
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\src\Controller\YatzyController.php:33
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\vendor\symfony\http-kernel\HttpKernel.php:157
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\vendor\symfony\http-kernel\HttpKernel.php:79
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\vendor\symfony\http-kernel\Kernel.php:195
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\vendor\symfony\http-kernel\HttpKernelBrowser.php:63
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\vendor\symfony\framework-bundle\KernelBrowser.php:159
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\vendor\symfony\browser-kit\AbstractBrowser.php:384
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\test\Controller\ControllerYatzyTest.php:42
-
---
-
-There was 1 failure:
-
-1) ControllerBookTest::testInvoke
-Failed asserting that 500 matches expected 200.
-
-C:\Users\Frida\dbwebb-kurser\mvc\me\ci\test\Controller\ControllerBookTest.php:16
-
-ERRORS!
-Tests: 42, Assertions: 55, Errors: 1, Failures: 1.
-
-Generating code coverage report in Clover XML format ... <!-- done [00:00.123]
-
-Generating code coverage report in HTML format ... done [00:00.472]
+Generating code coverage report in HTML format ... done [00:00.481]

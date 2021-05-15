@@ -4,16 +4,13 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use PHPUnit\Framework\TestCase;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
-use Symfony\Component\HttpFoundation\Session\Session;
-use Symfony\Component\HttpFoundation\Session\Storage\MockArraySessionStorage;
-use Symfony\Component\HttpFoundation\Response;
-use App\Controller\Functions;
-use App\Controller\TwentyOneController;
 
-class ControllerTwentyOneTest extends TestCase
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
+
+class ControllerTwentyOneTest extends WebTestCase   
 {
     // protected function setUp(): void
     // {
@@ -23,13 +20,12 @@ class ControllerTwentyOneTest extends TestCase
     //     $this->session->set("yatzyObject", $callable);
     // }
 
-    public function testCreateTheControllerClass()
+    public function testStart(): void 
     {
-        $controller = new TwentyOneController();
-        $this->assertInstanceOf("\App\Controller\TwentyOneController", $controller);
-        // $this->assertInstanceOf("Symfony\Bundle\FrameworkBundle\Controller\AbstractController", $controller);
+        $client = static::createClient();
+        $client->request('GET', '/twentyone');
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
     }
-
     // public function testTwentyOneControllerReturnsResponse()
     // {
     //     $controller = new TwentyOneController();
