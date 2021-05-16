@@ -1,3 +1,5 @@
+https://travis-ci.org/fahlstrm/framework-orm-ci.svg?branch=main 
+
 FRAMEWORK
 ---------------
 En samling kod för att spela 21 och Yatzy.
