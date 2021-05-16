@@ -14,8 +14,6 @@ class BookController extends AbstractController
 
     public function __invoke(): Response
     {
-        // $entityManager = $this->getDoctrine()->getManager();
-        // $bookRepository = $entityManager->getRepository(Book::class);
         $bookRepository = $this->getDoctrine()->getRepository(Book::class);
 
         $books = $bookRepository->findAll();

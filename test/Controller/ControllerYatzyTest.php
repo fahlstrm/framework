@@ -16,9 +16,6 @@ use App\Controller\Yatzy\GameYatzy;
 
 class ControllerYatzyTest extends WebTestCase
 {
-    private object $callable;
-    protected $session;
-
     // protected function setUp(): void
     // {
        
@@ -43,7 +40,7 @@ class ControllerYatzyTest extends WebTestCase
     //     $this->assertEquals(200, $client->getResponse()->getStatusCode());
     // }
 
-    // public function testSave():void 
+    // public function testReset():void 
     // {
     //     $client = static::createClient();
     //     $client->request('POST', '/yatzy/reset');

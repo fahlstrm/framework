@@ -1,0 +1,13 @@
+ ------ ----------------------------------------------------------------------------- 
+ [32m Line [39m [32m src\Controller\HighScoreController.php                                      [39m 
+ ------ ----------------------------------------------------------------------------- 
+[39;49m  19     Call to an undefined method[39;49m[39;49m                                                  [39;49m
+[39;49m         [39;49mDoctrine\Persistence\ObjectRepository<App\Entity\HighScore>::findAllGame().  
+[39;49m  20     Call to an undefined method[39;49m[39;49m                                                  [39;49m
+[39;49m         [39;49mDoctrine\Persistence\ObjectRepository<App\Entity\HighScore>::findAllGame().  
+ ------ ----------------------------------------------------------------------------- 
+
+[37;41m                                                                                         [39;49m
+[37;41m [ERROR] Found 2 errors                                                                  [39;49m
+[37;41m                                                                                         [39;49m
+

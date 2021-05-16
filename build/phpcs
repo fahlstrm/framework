@@ -1,0 +1,32 @@
+
+FILE: C:\Users\Frida\dbwebb-kurser\mvc\me\ci\test\Controller\ControllerTwentyOneTest.php
+----------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------------------------
+ 12 | ERROR | [x] Whitespace found at end of line
+ 13 | ERROR | [x] Expected 0 spaces before opening brace; 1 found
+----------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------------
+
+
+FILE: C:\Users\Frida\dbwebb-kurser\mvc\me\ci\test\Controller\ControllerYatzyTest.php
+------------------------------------------------------------------------------------------
+FOUND 9 ERRORS AFFECTING 9 LINES
+------------------------------------------------------------------------------------------
+  6 | ERROR | [x] Header blocks must not contain blank lines
+ 11 | ERROR | [x] Header blocks must not contain blank lines
+ 17 | ERROR | [ ] Each class must be in a namespace of at least one level (a top-level
+    |       |     vendor name)
+ 21 | ERROR | [x] Whitespace found at end of line
+ 28 | ERROR | [x] Whitespace found at end of line
+ 35 | ERROR | [x] Whitespace found at end of line
+ 43 | ERROR | [x] Whitespace found at end of line
+ 47 | ERROR | [x] Whitespace found at end of line
+ 50 | ERROR | [x] Expected 1 newline at end of file; 0 found
+------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------------
+
+Time: 7.16 secs; Memory: 8MB
+

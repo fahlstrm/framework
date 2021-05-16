@@ -2,10 +2,17 @@ PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
 
 ........................................                          40 / 40 (100%)
 
-Time: 00:01.229, Memory: 38.00 MB
+Time: 00:12.313, Memory: 64.00 MB
 
 OK (40 tests, 54 assertions)
 
-Generating code coverage report in Clover XML format ... <!-- done [00:00.170]
+Generating code coverage report in Clover XML format ... <!-- done [00:00.089]
 
-Generating code coverage report in HTML format ... done [00:00.481]
+Generating code coverage report in HTML format ... done [00:00.467]
+
+[43;30mRemaining indirect deprecation notices (2)[0m
+
+  2x: Doctrine\Persistence\Mapping\AbstractClassMetadataFactory::setCacheDriver is deprecated. Use setCache() with a PSR-6 cache instead.
+    1x in ControllerTwentyOneTest::testStart from App\Controller
+    1x in ControllerYatzyTest::testStart
+

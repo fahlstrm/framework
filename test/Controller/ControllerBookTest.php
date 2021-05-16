@@ -12,7 +12,7 @@ use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 //     {
 //         $client = static::createClient();
 //         $client->request('GET', '/book');
-    
+
 //         $this->assertEquals(200, $client->getResponse()->getStatusCode());
 //     }
 // }
