@@ -1,4 +1,4 @@
-https://travis-ci.org/fahlstrm/framework-orm-ci.svg?branch=main 
+[![Build Status](https://travis-ci.org/fahlstrm/framework-orm-ci.svg?branch=main)](https://travis-ci.org/fahlstrm/framework-orm-ci)
 
 FRAMEWORK
 ---------------
